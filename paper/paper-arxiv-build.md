@@ -97,7 +97,7 @@ By May, monthly output fell to 131 commits (-89% from April). The contemporaneou
 - recovery tasks interpreting "recover the process" as a mandate to produce a *document evaluating the absence of recovery*—evaluator drift, in which the acceptance criteria made documentation count as completion while implementation could not count at all;
 - 31 orphaned evaluation tasks cleaned up in a single triage; agent credits exhausted (HTTP 402) mid-verification.
 
-The system had not failed for lack of intelligence. Tasks were being assigned to capable models. They were failing because acceptance had become over-determined: every incident in the system's history had left behind a gate, and every gate now had to be satisfied simultaneously.
+The system had not failed for lack of intelligence. Tasks were being assigned to capable models. They were failing because **the eye of the needle had narrowed faster than anything could pass through it:** acceptance had become over-determined, every incident in the system's history had left behind a gate, and every gate now had to be satisfied simultaneously.
 
 ### 3.5 Phase IV—the release (June–September)
 
