@@ -1,42 +1,30 @@
 # The Bureaucratization Cascade
 
-**In mid-2026, an AI agent organization slowly stopped working — not because anything broke, but because it obeyed its own rules too well.**
+A computational ethnography of recursive constraint accretion in a hybrid human–AI organization. Poietic PBC working paper, September 2026.
 
-This repository documents what happened, names the failure mode, and publishes the evidence.
+**Paper:** [`bureaucratization-cascade.pdf`](bureaucratization-cascade.pdf) · Development: [`paper/`](paper/) + [`scripts/build.sh`](scripts/build.sh)
 
-## What happened
+## Abstract
 
-[Poietic](https://poietic.life) built [wg](https://graphwork.github.io), a tool that coordinates human and AI agents through a shared dependency graph. Between January and September 2026, wg was developed almost entirely by the agents it coordinates — humans set direction; agents wrote the code, the tests, the review criteria, and the rules by which future work would be judged.
+Between January and September 2026, the open-source coordination system **wg** was developed almost entirely by AI agents, under human direction, through its own coordination protocol. The agents wrote the code, the organization, the verification criteria, and the rules by which future work would be judged. Over five months this produced a failure mode we have not seen described in this form: locally reasonable attempts at correction accumulated into an increasingly burdensome governance regime. By late April the system's monthly commit volume peaked at 1,082; by May, output had collapsed by 89%. A census of the governance layer found **312 constraints added and 1 removed**; 93% of constraints were created in a single commit and never revisited. Recovery came only through targeted edits that disabled the machinery adding new constraints.
 
-It worked remarkably well for a while. Then it didn't.
-
-Every time agents hit a failure, they responded the way you'd want: they added a check, a gate, a contract, a rule to prevent recurrence. What no agent ever did was remove one. Each rule was locally rational. The accumulation was not:
-
-- **312 constraints added. 1 removed.** 93% of constraints were created in a single commit and never revisited.
-- In April, monthly commit volume peaked at 1,082. In May it collapsed by 89%. Tasks stopped completing — not because the models got dumber, but because **acceptance had become over-determined**: every gate from every past incident now had to be satisfied simultaneously.
-- Recovery came only from targeted human edits that disabled the machinery *adding* new gates. The system wasn't broken. It was in compliance.
-
-## The name
+We name this failure mode and document it from the preserved forensic record — 3,194 commits, agent session logs, evaluation receipts, and failure reports.
 
 > **Recursive constraint accretion:** a process in which agents responding to local failures add persistent constraints faster than the organization retires or amortizes them, causing aggregate compliance burden to grow over time.
 
-Collapse is one possible outcome, not a requirement. And while we observed this in an agent organization — where the loop that human bureaucracies run over decades ran in months — the definition doesn't require AI. Any self-modifying governance system needs **rule lifecycle management, not just rule enforcement**. We propose this as a candidate multi-agent failure mode, alongside collusion and emergent miscoordination, worth testing in other systems.
+The definition does not require collapse, and does not require AI. We propose it as a candidate multi-agent failure mode worth testing in other systems.
 
-## The paper
+## Contents
 
-Two versions, same content:
+- `paper/paper.md` — source; edit this
+- `bureaucratization-cascade.pdf` — built paper
+- `figures/` — the four figures (PNG)
+- `data/` — verified datasets and audit reports backing every claim (gate census, accretion curve, model attribution, metered costs, fact-check, security audits)
+- `research/` — related-work dossier with four annexes (prior sightings of the phenomenon)
+- `reviews/` — dated review notes
+- `scripts/build.sh` — reproducible build: `./scripts/build.sh`
 
-- **[`bureaucratization-cascade-arxiv.pdf`](bureaucratization-cascade-arxiv.pdf)** — academic register, stripped rhetoric, arXiv-ready
-- **[`bureaucratization-cascade.pdf`](bureaucratization-cascade.pdf)** — full-voice version, same claims, more character
+## Related
 
-Every number in them is verified: the [fact-check report](data/fact-check.md) ran every commit hash, quote, and figure against the repository record (24 PASS, 0 FAIL, corrections applied). Figure data lives in [`data/`](data/); the builds are reproducible via [`scripts/`](scripts/).
-
-The [full forensic record](https://github.com/ekg/wg) — 3,194 commits, agent session logs, the failure reports — is public in the wg repository.
-
-## Why publish the embarrassing version
-
-Because a named, documented, forensically-grounded failure is worth more to the field than ten private ones. If your agents can add rules but never retire them, this is your future at machine speed. The fix is a design parameter: **bound the topology, price the gates, keep the history, and build the bankruptcy valve before you need it.**
-
----
-
-*Poietic PBC builds open tools for legible human–AI collaboration. Contact: the [Poietic site](https://poietic.life).*
+- wg (the system studied): [graphwork.github.io](https://graphwork.github.io) · [github.com/bureaucratization/bureaucratization-cascade](https://github.com/bureaucratization/bureaucratization-cascade)
+- Poietic PBC: [poietic.life](https://poietic.life)
