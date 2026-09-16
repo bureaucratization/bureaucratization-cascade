@@ -1,0 +1,313 @@
+topic_name,birth_date,last_activity_date,commit_count,docs_only_or_src,agent_tags,removal_date,removal_evidence,triggering_incident,confidence
+audit-cycle-cleanup-round,2026-02-15,2026-02-15,5,unchecked,,surviving,,unknown,medium
+update-skill-remove-deprecated,2026-02-15,2026-02-15,1,unchecked,,surviving,,unknown,medium
+cycle-redesign-auto-back,2026-02-23,2026-02-23,1,unchecked,,surviving,,unknown,medium
+prevent-workers-bypassing-cycle,2026-02-24,2026-02-24,1,unchecked,,surviving,,unknown,medium
+propagate-evaluations-role-components,2026-02-26,2026-02-26,1,unchecked,,surviving,,unknown,medium
+four-layer-test-suite,2026-02-26,2026-02-26,1,unchecked,,surviving,,unknown,medium
+autopoietic-task-generation-guardrails,2026-02-27,2026-02-27,1,unchecked,,surviving,,unknown,medium
+home-scroll-keys-scroll,2026-03-03,2026-03-03,1,unchecked,,surviving,,unknown,medium
+make-verify-a,2026-03-04,2026-03-04,3,unchecked,make-verify-a,surviving,,unknown,high
+enforce-message-replies-agent,2026-03-04,2026-03-04,1,unchecked,,surviving,,unknown,medium
+tui-text-input,2026-03-05,2026-03-05,1,unchecked,tui-text-input,surviving,,unknown,high
+research-how-should,2026-03-05,2026-03-05,1,docs*,research-how-should,surviving,,unknown,high
+tui-evaluating-validation,2026-03-07,2026-03-07,1,unchecked,tui-evaluating-validation,surviving,,unknown,high
+guard-service-stop,2026-03-07,2026-03-07,1,unchecked,guard-service-stop,surviving,,unknown,high
+mandatory-validation-gate-pendingvalidation,2026-03-07,2026-03-07,1,unchecked,,surviving,,unknown,medium
+char-boundary-panic-evaluator,2026-03-08,2026-03-08,1,unchecked,,surviving,,unknown,medium
+show-aggregated-agency,2026-03-09,2026-03-09,1,unchecked,show-aggregated-agency;∎,surviving,,unknown,high
+verify-first-eval-pipeline,2026-03-09,2026-03-09,1,unchecked,verify-first-integration,surviving,,unknown,medium
+pass-flip-score-verify,2026-03-09,2026-03-09,1,unchecked,verify-context-eval,surviving,,unknown,medium
+design-verify-first,2026-03-09,2026-03-09,1,docs*,design-verify-first,surviving,,unknown,high
+enable-validate-agency,2026-03-10,2026-03-10,1,unchecked,enable-validate-agency,surviving,,unknown,high
+investigate-and-fix,2026-03-10,2026-03-10,1,unchecked,investigate-and-fix,surviving,,unknown,high
+integrate-and-verify,2026-03-11,2026-03-27,2,unchecked,integrate-and-verify,surviving,,unknown,high
+investigate-flaky-test,2026-03-11,2026-03-11,1,unchecked,investigate-flaky-test,surviving,,unknown,high
+wire-verify-tasks-source,2026-03-11,2026-03-11,1,unchecked,fix-verify-task,surviving,,unknown,medium
+.verify-enable-validate-agency,2026-03-11,2026-03-11,1,unchecked,.verify-enable-validate-agency,surviving,,unknown,high
+audit-and-update,2026-03-11,2026-03-11,1,unchecked,audit-and-update,surviving,,unknown,high
+rename-verify-flip,2026-03-11,2026-03-11,1,unchecked,rename-verify-flip,surviving,,unknown,high
+implement-wg-sweep,2026-03-11,2026-03-11,1,unchecked,implement-wg-sweep,surviving,,unknown,high
+implement-agency-pipeline,2026-03-11,2026-03-11,1,unchecked,implement-agency-pipeline,surviving,,unknown,high
+manual-smoke-test-coordinator,2026-03-11,2026-03-11,1,docs*,verify-coordinator-modal,surviving,,unknown,medium
+investigate-assign-tasks,2026-03-12,2026-03-12,1,unchecked,investigate-assign-tasks,surviving,,unknown,high
+annotation-task-mapping,2026-03-12,2026-03-12,1,unchecked,annotation-task-mapping,surviving,,unknown,high
+.verify-add-phase-symbols,2026-03-12,2026-03-12,1,unchecked,.verify-add-phase-symbols,surviving,,unknown,high
+.verify-fix-place-assign-race,2026-03-12,2026-03-12,1,unchecked,.verify-fix-place-assign-race,surviving,,unknown,high
+.verify-update-tui-spinner,2026-03-13,2026-03-13,1,unchecked,".verify-update-tui-spinner;R,O,G,C,V",surviving,,unknown,high
+tune-coordinator-prompt,2026-03-13,2026-03-13,1,unchecked,tune-coordinator-prompt,surviving,,unknown,high
+push-and-verify-ci,2026-03-13,2026-03-13,3,unchecked,push-and-verify-ci,surviving,,unknown,high
+.verify-impl-evolver-cycle,2026-03-13,2026-03-13,1,unchecked,.verify-impl-evolver-cycle,surviving,,unknown,high
+.verify-implement-wg-model,2026-03-17,2026-03-17,1,unchecked,.verify-implement-wg-model,surviving,,unknown,high
+investigate-and-fix-2,2026-03-19,2026-03-30,2,unchecked,investigate-and-fix-2,surviving,,unknown,high
+investigate-token-accounting,2026-03-19,2026-03-19,1,unchecked,investigate-token-accounting,surviving,,unknown,high
+.verify-ds3-ds2-doc-sync-readme,2026-03-19,2026-03-19,1,docs*,.verify-ds3-ds2-doc-sync-readme,surviving,,unknown,high
+investigate-coordinator-not,2026-03-19,2026-03-19,1,unchecked,investigate-coordinator-not,surviving,,unknown,high
+investigate-coordinator-not-2,2026-03-20,2026-03-20,1,unchecked,investigate-coordinator-not-2,surviving,,unknown,high
+investigate-tui-termux,2026-03-21,2026-03-21,1,unchecked,X key;investigate-tui-termux,surviving,,unknown,high
+doc-refresh-mar21-ds4-doc-sync-ds3-ds2-doc-sync-manual,2026-03-21,2026-03-21,1,docs*,doc-refresh-mar21-ds4-doc-sync-ds3-ds2-doc-sync-manual,surviving,,unknown,high
+"wait, msg, approve/reject, discover, publish, reclaim",2026-03-21,2026-03-21,1,docs*,"wait, msg, approve/reject, discover, publish, reclaim",surviving,,unknown,high
+investigate-eval-executor,2026-03-21,2026-03-21,2,unchecked,investigate-eval-executor,surviving,,unknown,high
+integration-test-daemon-cleanup,2026-03-23,2026-03-23,1,unchecked,fix-integration-test,surviving,,unknown,medium
+navigate-middle-task-screencast,2026-03-23,2026-03-23,1,unchecked,fix-graph-edge,surviving,,unknown,medium
+.verify-compact-metrics,2026-03-23,2026-03-23,1,unchecked,.verify-compact-metrics,surviving,,unknown,high
+.verify-mu-c-single-panel-nav,2026-03-25,2026-03-25,1,unchecked,.verify-mu-c-single-panel-nav,surviving,,unknown,high
+.verify-fix-tui-log-wordwrap-color,2026-03-25,2026-03-25,2,unchecked,.verify-fix-tui-log-wordwrap-color,surviving,,unknown,high
+.verify-mu-l-toasts,2026-03-25,2026-03-25,1,unchecked,.verify-mu-l-toasts,surviving,,unknown,high
+.verify-test-verify-shell-4,2026-03-25,2026-03-25,1,unchecked,.verify-test-verify-shell-4,surviving,,unknown,high
+.verify-or-diagnose-fix,2026-03-25,2026-03-25,1,unchecked,.verify-or-diagnose-fix,surviving,,unknown,high
+investigate-per-task,2026-03-25,2026-03-25,1,unchecked,investigate-per-task,surviving,,unknown,high
+wire-flip-context,2026-03-25,2026-03-25,1,unchecked,wire-flip-context,surviving,,unknown,high
+.verify-re-record-heroview,2026-03-25,2026-03-25,1,unchecked,.verify-re-record-heroview,surviving,,unknown,high
+floor-char-boundary-string,2026-03-25,2026-03-25,1,unchecked,fix-utf-8-boundary,surviving,,unknown,medium
+investigate-vizview-notification,2026-03-26,2026-03-26,1,docs*,investigate-vizview-notification,surviving,,unknown,high
+investigate-native-executor,2026-03-26,2026-03-26,1,docs*,investigate-native-executor,surviving,,unknown,high
+.verify-agency-pull-impl,2026-03-27,2026-03-27,1,unchecked,.verify-agency-pull-impl,surviving,,unknown,high
+session-boundary-markers,2026-03-27,2026-03-27,1,unchecked,session-boundary-markers,surviving,,unknown,high
+investigate-and-fix-3,2026-03-27,2026-03-27,1,unchecked,investigate-and-fix-3,surviving,,unknown,high
+.verify-implement-tui-chat,2026-03-27,2026-03-27,1,unchecked,.verify-implement-tui-chat,surviving,,unknown,high
+investigate-tui-chat,2026-03-27,2026-03-27,1,docs*,investigate-tui-chat,surviving,,unknown,high
+.verify-fix-cycle-aware,2026-03-28,2026-03-28,1,unchecked,.verify-fix-cycle-aware,surviving,,unknown,high
+investigate-cycle-deadlock,2026-03-28,2026-03-28,1,docs*,investigate-cycle-deadlock,surviving,,unknown,high
+reject-bare-model-names,2026-03-30,2026-03-30,1,unchecked,fix-reject-bare,surviving,,unknown,medium
+bare-model-name-rejection,2026-03-30,2026-03-30,1,unchecked,test-provider-model-3,surviving,,unknown,medium
+investigate-user-board,2026-03-31,2026-03-31,1,docs*,investigate-user-board,surviving,,unknown,high
+surface-verify-failures-show,2026-04-01,2026-04-01,1,unchecked,verify-error-surfacing,surviving,,unknown,medium
+spawn-failures-field-task,2026-04-01,2026-04-01,1,unchecked,verify-circuit-breaker,surviving,,unknown,medium
+implement-circuit-breaker-verify,2026-04-01,2026-04-01,1,unchecked,verify-circuit-breaker,surviving,,unknown,medium
+validate-verify-commands-task,2026-04-01,2026-04-01,1,unchecked,verify-validate-creation,surviving,,unknown,medium
+investigate-openrouter-failure,2026-04-01,2026-04-01,1,unchecked,investigate-openrouter-failure,surviving,,unknown,high
+make-verify-tasks,2026-04-01,2026-04-01,1,unchecked,make-verify-tasks,surviving,,unknown,high
+design-assignment-time,2026-04-01,2026-04-01,1,unchecked,design-assignment-time,surviving,,unknown,high
+.verify-implement-tui-inspector-2,2026-04-01,2026-04-01,3,unchecked,.verify-implement-tui-inspector-2,surviving,,unknown,high
+integration-verify-viz,2026-04-02,2026-04-02,1,unchecked,integration-verify-viz,surviving,,unknown,high
+investigate-and-fix-4,2026-04-02,2026-04-02,1,unchecked,investigate-and-fix-4,surviving,,unknown,high
+implement-chat-delivery,2026-04-02,2026-04-02,1,unchecked,implement-chat-delivery,surviving,,unknown,high
+investigate-triage-system,2026-04-02,2026-04-02,1,docs*,investigate-triage-system,surviving,,unknown,high
+exec2-smoke-gate,2026-04-03,2026-04-03,1,unchecked,exec2-smoke-gate,surviving,,unknown,high
+exec2-state-injection-gate,2026-04-03,2026-04-03,1,unchecked,exec2-state-injection-gate,surviving,,unknown,high
+exec-opus-stabilize,2026-04-03,2026-04-03,1,unchecked,exec-opus-stabilize;test,surviving,,unknown,high
+.verify-exec-error-recovery,2026-04-03,2026-04-03,1,unchecked,.verify-exec-error-recovery,surviving,,unknown,high
+.verify-exec-integration-gate,2026-04-03,2026-04-03,1,unchecked,.verify-exec-integration-gate,surviving,,unknown,high
+exec-integration-gate,2026-04-03,2026-04-03,1,unchecked,exec-integration-gate,surviving,,unknown,high
+.verify-exec-smoke-context,2026-04-03,2026-04-03,1,unchecked,.verify-exec-smoke-context,surviving,,unknown,high
+prefix-unused-param-underscore,2026-04-04,2026-04-04,1,unchecked,fix-executor-verify,surviving,,unknown,medium
+impl-executor-test-discovery,2026-04-04,2026-04-04,1,unchecked,impl-executor-test-discovery,surviving,,unknown,high
+impl-executor-separate-verify,2026-04-04,2026-04-04,1,unchecked,impl-executor-separate-verify,surviving,,unknown,high
+.verify-design-hard-tb,2026-04-05,2026-04-05,1,unchecked,.verify-design-hard-tb,surviving,,unknown,high
+investigate-f-failure,2026-04-05,2026-04-05,1,unchecked,investigate-f-failure,surviving,,unknown,high
+comprehensive-adapter-tests-missing,2026-04-05,2026-04-05,1,unchecked,verify-tb-trials,surviving,,unknown,medium
+increase-default-verify-timeout,2026-04-05,2026-04-05,1,unchecked,fix-verify-timeout-default,surviving,,unknown,medium
+tb-collect-condition-f,2026-04-05,2026-04-05,1,unchecked,tb-collect-condition-f,surviving,,unknown,high
+tb-investigate-decomposition,2026-04-05,2026-04-05,1,unchecked,tb-investigate-decomposition,surviving,,unknown,high
+tb-investigate-wg-availability,2026-04-05,2026-04-05,1,unchecked,tb-investigate-wg-availability,surviving,,unknown,high
+tb-investigate-flip-model,2026-04-05,2026-04-05,1,unchecked,tb-investigate-flip-model,surviving,,unknown,high
+.evolve-analyze-bizarre-ideation-run-20260405-051623,2026-04-05,2026-04-05,1,unchecked,.evolve-analyze-bizarre-ideation-run-20260405-051623,surviving,,unknown,high
+remove-hard-evasion,2026-04-06,2026-04-06,1,unchecked,remove-hard-evasion,surviving,,2026-04-11 April triage,high
+.verify-fix-hardcoded-models-service,2026-04-06,2026-04-06,2,unchecked,.verify-fix-hardcoded-models-service,surviving,,2026-04-11 April triage,high
+.verify-write-introduction-and-background-for-after-depend,2026-04-09,2026-04-09,1,docs*,.verify-write-introduction-and-background-for-after-depend,surviving,,2026-04-11 April triage,high
+.verify-create-actual-after-dependency-enforcement-design--3,2026-04-09,2026-04-09,1,unchecked,.verify-create-actual-after-dependency-enforcement-design--3,surviving,,2026-04-11 April triage,high
+.verify-create-after-dependency-enforcement-design-md-file-3,2026-04-09,2026-04-09,1,unchecked,.verify-create-after-dependency-enforcement-design-md-file-3,surviving,,2026-04-11 April triage,high
+.verify-write-bare-coordinator-design-doc-4,2026-04-09,2026-04-09,1,unchecked,.verify-write-bare-coordinator-design-doc-4,surviving,,2026-04-11 April triage,high
+investigate-coordinator-daemon,2026-04-09,2026-04-09,1,unchecked,investigate-coordinator-daemon,surviving,,2026-04-11 April triage,high
+coordinator-uses-bounded-context,2026-04-09,2026-04-09,1,unchecked,,surviving,,2026-04-11 April triage,medium
+smoke-verify-gate,2026-04-09,2026-04-09,1,unchecked,smoke-verify-gate,surviving,,2026-04-11 April triage,high
+isolate-state-injection-tests,2026-04-09,2026-04-09,1,unchecked,fix-tb-verify-gate,surviving,,2026-04-11 April triage,medium
+inject-verify-gate-task,2026-04-09,2026-04-09,1,unchecked,fix-tb-verify-gate,surviving,,2026-04-11 April triage,medium
+investigate-coordinator-spawning,2026-04-10,2026-04-10,1,unchecked,investigate-coordinator-spawning,surviving,,2026-04-11 April triage,high
+bounds-check-offset-file,2026-04-10,2026-04-10,1,unchecked,,surviving,,2026-04-11 April triage,medium
+remove-unused-imports-blocking,2026-04-11,2026-04-11,1,unchecked,fix-unused-imports,surviving,,2026-04-11 April triage,medium
+implement-verify-lint,2026-04-11,2026-04-11,1,unchecked,implement-verify-lint,surviving,,2026-04-11 April triage,high
+.verify-bypass-verification-for,2026-04-11,2026-04-11,1,unchecked,.verify-bypass-verification-for,surviving,,2026-04-11 April triage,high
+implement-openrouter-cost,2026-04-11,2026-04-11,1,unchecked,implement-openrouter-cost,surviving,,2026-04-11 April triage,high
+research-investigate-existing,2026-04-11,2026-04-11,1,docs*,research-investigate-existing,surviving,,2026-04-11 April triage,high
+integration-verify-all,2026-04-11,2026-04-11,2,unchecked,dead_code;integration-verify-all,surviving,,2026-04-11 April triage,high
+implement-retry-logic-cargo,2026-04-11,2026-04-11,1,unchecked,fix-file-lock,surviving,,2026-04-11 April triage,medium
+comprehensive-verify-timeout-functionality,2026-04-11,2026-04-11,1,unchecked,test-task-with,surviving,,2026-04-11 April triage,medium
+.verify-research-output-management,2026-04-11,2026-04-11,2,unchecked,.verify-research-output-management,surviving,,2026-04-11 April triage,high
+implement-verify-timeout,2026-04-11,2026-04-11,1,unchecked,implement-verify-timeout,surviving,,2026-04-11 April triage,high
+resolve-remaining-test-compilation,2026-04-11,2026-04-11,1,unchecked,,surviving,,2026-04-11 April triage,medium
+missing-scoped-verify-enabled,2026-04-11,2026-04-11,1,unchecked,,surviving,,2026-04-11 April triage,medium
+.verify-fix-coordinator-lifecycle,2026-04-11,2026-04-11,1,unchecked,.verify-fix-coordinator-lifecycle,surviving,,2026-04-11 April triage,high
+compilation-during-verify-impl,2026-04-11,2026-04-11,1,unchecked,,surviving,,2026-04-11 April triage,medium
+harness-completion-polling-verify,2026-04-12,2026-04-12,1,unchecked,fix-g-harness,surviving,,2026-04-11 April triage,medium
+impl-prevent-self-failure,2026-04-12,2026-04-12,1,unchecked,impl-prevent-self-failure,surviving,,2026-04-11 April triage,high
+impl-verify-decomposition,2026-04-12,2026-04-12,2,unchecked,impl-verify-decomposition,surviving,,2026-04-11 April triage,high
+implement-cycle-detection-guard,2026-04-12,2026-04-12,1,unchecked,,surviving,,2026-04-11 April triage,medium
+disable-auto-verify,2026-04-12,2026-04-12,1,unchecked,disable-auto-verify,surviving,,2026-04-11 April triage,high
+.verify-fix-remove-unused-9,2026-04-12,2026-04-12,1,unchecked,.verify-fix-remove-unused-9;dead_code,surviving,,2026-04-11 April triage,high
+smart-verify-detect,2026-04-12,2026-04-12,1,unchecked,smart-verify-detect,surviving,,2026-04-11 April triage,high
+.verify-integrate-and-validate,2026-04-12,2026-04-12,2,unchecked,.verify-integrate-and-validate,surviving,,2026-04-11 April triage,high
+.verify-implement-robustness-improvements,2026-04-12,2026-04-12,1,unchecked,.verify-implement-robustness-improvements,surviving,,2026-04-11 April triage,high
+integrate-robustness-improvements,2026-04-12,2026-04-12,1,unchecked,integrate-robustness-improvements,surviving,,2026-04-11 April triage,high
+.verify-implement-recovery-branch,2026-04-12,2026-04-12,1,unchecked,.verify-implement-recovery-branch,surviving,,2026-04-11 April triage,high
+comprehensive-concurrent-head-reference,2026-04-12,2026-04-12,1,unchecked,verify-head-reference,surviving,,2026-04-11 April triage,medium
+nex-delegate,2026-04-13,2026-04-13,1,unchecked,nex-delegate,surviving,,2026-04-11 April triage,high
+investigate-sglang-400-bad,2026-04-13,2026-04-13,1,unchecked,investigate-sglang-400-bad,surviving,,2026-04-11 April triage,high
+.verify-deferred-nex-cron-coordinator,2026-04-14,2026-04-14,1,unchecked,.verify-deferred-nex-cron-coordinator,surviving,,2026-04-11 April triage,high
+unified-path-forward-tool,2026-04-16,2026-04-16,1,docs*,,surviving,,2026-04-11 April triage,medium
+gated on config/env,2026-04-16,2026-04-16,1,unchecked,gated on config/env,surviving,,2026-04-11 April triage,high
+remove autonomous gate,2026-04-16,2026-04-16,1,unchecked,nex;remove autonomous gate,surviving,,2026-04-11 April triage,high
+turn-progress-feedback-delegate,2026-04-17,2026-04-17,1,unchecked,nex,surviving,,unknown,medium
+auto-rescue-eval-gate,2026-04-17,2026-04-17,1,unchecked,agency,surviving,,unknown,medium
+current-turn-defense-reject,2026-04-17,2026-04-17,1,unchecked,nex,surviving,,unknown,medium
+deprecate-verify-autospawn-propagate,2026-04-17,2026-04-17,1,unchecked,,surviving,,unknown,medium
+stage-shared-canceltoken-turn,2026-04-17,2026-04-17,1,unchecked,nex,surviving,,unknown,medium
+turn boundary + compaction + interruptibility,2026-04-17,2026-04-17,1,docs*,turn boundary + compaction + interruptibility,surviving,,unknown,high
+gate-unix-specific-apis,2026-04-19,2026-04-19,1,unchecked,,surviving,,unknown,medium
+byte-boundary-panic-trimming,2026-04-21,2026-04-21,1,unchecked,tui,surviving,,unknown,medium
+agent-57,2026-04-21,2026-04-21,1,unchecked,agent-57,surviving,,unknown,high
+agent-54,2026-04-21,2026-04-21,1,unchecked,agent-54,surviving,,unknown,high
+agent-211,2026-04-22,2026-04-22,1,docs,agent-211,surviving,,unknown,high
+ignore-untracked-files-uncommitted,2026-04-22,2026-04-22,1,src,verify-worktree-gc,surviving,,unknown,medium
+tighten-timeout-detection-verify,2026-04-22,2026-04-22,1,unchecked,doctor,surviving,,unknown,medium
+agent-265,2026-04-24,2026-04-24,1,docs,agent-265,surviving,,unknown,high
+agent-260,2026-04-24,2026-04-24,1,docs,agent-260,surviving,,unknown,high
+agent-102,2026-04-26,2026-04-26,1,src,agent-102,surviving,,unknown,high
+agent-106,2026-04-26,2026-04-26,1,docs,agent-106,surviving,,unknown,high
+agent-1043,2026-04-28,2026-04-28,1,src,agent-1043,surviving,,unknown,high
+agent-936,2026-04-28,2026-04-28,1,docs,agent-936,surviving,,unknown,high
+agent-1318,2026-05-01,2026-05-01,1,src,agent-1318,surviving,,unknown,high
+agent-2457,2026-05-04,2026-05-04,1,src,agent-2457,surviving,,unknown,high
+investigate-eval-gate,2026-05-06,2026-05-06,1,docs,investigate-eval-gate,surviving,,unknown,high
+codex-impl-fix,2026-05-06,2026-05-06,1,src,codex-impl-fix,surviving,,unknown,high
+agent-2755,2026-05-23,2026-05-23,1,src,agent-2755,surviving,,unknown,high
+agent-76,2026-06-03,2026-06-03,1,src,agent-76,surviving,,2026-06-03 Autopoietic C4 loop failure,high
+agent-5211,2026-06-10,2026-06-10,1,src,agent-5211,surviving,,unknown,high
+auto-wire-the,2026-06-26,2026-06-26,1,src,auto-wire-the,surviving,,unknown,high
+agent-5891,2026-06-28,2026-06-28,1,src,agent-5891,surviving,,unknown,high
+r8,2026-07-10,2026-07-10,1,src,R8,surviving,,unknown,high
+"r8, pr #56",2026-07-11,2026-07-11,1,src,"R8, PR #56;scope-guard",surviving,,unknown,high
+agent-104,2026-07-11,2026-07-11,1,docs,agent-104,surviving,,unknown,high
+reconcile-local-main-origin,2026-07-13,2026-07-13,1,src,,surviving,,unknown,medium
+agent-404,2026-07-14,2026-07-14,1,src,agent-404,surviving,,unknown,high
+agent-400,2026-07-14,2026-07-14,1,src,agent-400,surviving,,unknown,high
+retrigger-session-lock-foreign,2026-07-15,2026-07-15,1,unchecked,,surviving,,unknown,medium
+"flaky upstream session_lock pid-reuse test, unrelated to sco",2026-07-15,2026-07-15,1,unchecked,"flaky upstream session_lock PID-reuse test, unrelated to scope-guard",surviving,,unknown,high
+"r8, pr #56 rd2",2026-07-15,2026-07-15,1,src,"R8, PR #56 rd2;scope-guard",surviving,,unknown,high
+pr-49-round-2-erik,2026-07-15,2026-07-15,1,src,pr-49-round-2-erik,surviving,,unknown,high
+merge-pull-request-lucapinello,2026-07-16,2026-07-16,1,unchecked,,surviving,,unknown,medium
+"r8, pr #56 rd3",2026-07-16,2026-07-16,1,src,"R8, PR #56 rd3;scope-guard",surviving,,unknown,high
+never-negative-framing-weaken,2026-07-16,2026-07-16,1,src,pr54-round3,surviving,,unknown,medium
+pr #51 round 3,2026-07-16,2026-07-16,1,src,PR #51 round 3;human-dispatch,surviving,,unknown,high
+review-and-land,2026-07-18,2026-07-18,1,src,review-and-land,surviving,,unknown,high
+validate-integrated-luca-2,2026-07-19,2026-07-19,1,src,validate-integrated-luca-2,surviving,,unknown,high
+agent-664,2026-07-24,2026-07-24,1,src,agent-664,surviving,,unknown,high
+agent-793,2026-07-25,2026-07-25,1,src,agent-793,surviving,,unknown,high
+agent-732,2026-07-25,2026-07-25,1,src,agent-732,surviving,,unknown,high
+agent-896,2026-07-26,2026-07-26,1,src,agent-896,surviving,,unknown,high
+agent-889,2026-07-26,2026-07-26,1,src,agent-889,surviving,,unknown,high
+quality-pass-dead,2026-07-26,2026-07-26,1,docs,quality-pass-dead,surviving,,unknown,high
+agent-817,2026-07-26,2026-07-26,1,src,agent-817,surviving,,unknown,high
+merge-candidate-wgcid-blake3,2026-07-28,2026-07-31,5,unchecked,,surviving,,unknown,medium
+rescue-checkpoint-flip-first,2026-07-28,2026-07-28,1,unchecked,,surviving,,unknown,medium
+flip-first-required-gate,2026-07-28,2026-07-28,1,src,flip-first-required-gate,surviving,,unknown,high
+integrate-and-canary,2026-07-28,2026-07-28,1,src,integrate-and-canary,surviving,,unknown,high
+rescue-checkpoint-continuation-exit,2026-07-28,2026-07-28,1,unchecked,,surviving,,unknown,medium
+fence-continuation-process-epochs,2026-07-28,2026-07-28,1,src,fix-pi-continuation-exit-epoch-fence,surviving,,unknown,medium
+implement-lazy-evaluation,2026-07-28,2026-07-28,1,src,implement-lazy-evaluation,surviving,,unknown,high
+rescue-checkpoint-native-progress,2026-07-28,2026-07-28,1,unchecked,,surviving,,unknown,medium
+restore-native-progress-session,2026-07-28,2026-07-28,1,src,fix-pi-native-progress-session-proof,surviving,,unknown,medium
+bound-worktree-observer-churn,2026-07-28,2026-07-28,1,src,fix-observer-ignored-churn-resource-leak,surviving,,unknown,medium
+reconcile-chat-creates-timeout,2026-07-30,2026-07-30,1,src,tui,surviving,,unknown,medium
+merge-branch-main-agent,2026-07-31,2026-09-09,2,src,,surviving,,unknown,medium
+fence-reopen-until-exact,2026-07-31,2026-07-31,1,src,lifecycle,surviving,,unknown,medium
+rescue-checkpoint-reframe-supervisor,2026-07-31,2026-07-31,1,unchecked,,surviving,,unknown,medium
+reframe-supervisor-as-convergence-reconciler,2026-07-31,2026-07-31,1,docs,reframe-supervisor-as-convergence-reconciler,surviving,,unknown,high
+rescue-checkpoint-bounded-eval,2026-07-31,2026-07-31,1,unchecked,,surviving,,unknown,medium
+prove-deep-flip-ignores,2026-07-31,2026-07-31,1,src,fix-bounded-eval-evidence-sufficiency,surviving,,unknown,medium
+fail-bounded-evaluation-closed,2026-07-31,2026-07-31,1,src,fix-bounded-eval-evidence-sufficiency,surviving,,unknown,medium
+rescue-checkpoint-restore-attended,2026-07-31,2026-07-31,1,unchecked,,surviving,,unknown,medium
+restore-attended-repository-authority,2026-07-31,2026-07-31,1,src,chat,surviving,,unknown,medium
+atomic-save-kernel-schema,2026-08-03,2026-08-03,1,src,atomic-save-kernel-schema,surviving,,unknown,high
+keep-nested-smoke-socket,2026-08-03,2026-08-03,1,src,,surviving,,unknown,medium
+define-final-convergence-authority,2026-08-04,2026-08-04,1,docs,,surviving,,unknown,medium
+expose-land-report-explore,2026-08-05,2026-08-05,1,src,,surviving,,unknown,medium
+restore-direct-fail-stop,2026-08-05,2026-08-05,1,src,,surviving,,unknown,medium
+gate-completion-manifest-review,2026-08-05,2026-08-05,1,docs,,surviving,,unknown,medium
+manifest-bound-flip-eval,2026-08-05,2026-08-05,1,src,,surviving,,unknown,medium
+design-wg-pi-compaction-kick,2026-08-06,2026-08-06,1,docs,design-wg-pi-compaction-kick,surviving,,unknown,high
+reproducible-seam-search-evidence,2026-08-06,2026-08-06,1,docs,,surviving,,unknown,medium
+delete-evaluator-reconciliation-status,2026-08-07,2026-08-07,1,src,,surviving,,unknown,medium
+delete-evaluator-driven-retry,2026-08-07,2026-08-07,1,src,,surviving,,unknown,medium
+park-subtask-parents-through,2026-08-07,2026-08-07,1,src,,surviving,,unknown,medium
+keep-rejected-candidates-implicit,2026-08-07,2026-08-07,1,src,,surviving,,unknown,medium
+route-kill-redispatch-through,2026-08-07,2026-08-07,1,src,,surviving,,unknown,medium
+route-abandon-cascades-through,2026-08-07,2026-08-07,1,src,,surviving,,unknown,medium
+route-dispatcher-failures-through,2026-08-07,2026-08-07,1,src,,surviving,,unknown,medium
+delete-synthetic-agency-task,2026-08-07,2026-08-07,1,src,,surviving,,unknown,medium
+remove-heartbeat-lifecycle-authority,2026-08-07,2026-08-07,1,src,,surviving,,unknown,medium
+audit-control-plane-authority,2026-08-07,2026-08-07,1,docs,,surviving,,unknown,medium
+expose-inherited-build-admission,2026-08-08,2026-08-08,1,src,fix-build-admission-default-ui,surviving,,unknown,medium
+decision-authority-sync-roadmap,2026-08-08,2026-08-08,1,docs,,surviving,,unknown,medium
+verify-review-receipts-preserve,2026-08-08,2026-08-08,1,src,,surviving,,unknown,medium
+persist-accounting-archival-bound,2026-08-08,2026-08-08,1,src,,surviving,,unknown,medium
+separate-roadmap-evidence-classes,2026-08-08,2026-08-08,1,docs,,surviving,,unknown,medium
+clarify-authority-precedence-update,2026-08-08,2026-08-08,1,docs,,surviving,,unknown,medium
+tighten-roadmap-evidence-scope,2026-08-08,2026-08-08,1,docs,,surviving,,unknown,medium
+align-roadmap-evidence-labels,2026-08-08,2026-08-08,1,docs,,surviving,,unknown,medium
+audit-model-plane,2026-08-08,2026-08-08,1,docs,audit-model-plane,surviving,,unknown,high
+reconcile-orchestration-manuals-smoke,2026-08-08,2026-08-08,1,docs,,surviving,,unknown,medium
+split-orchestration-sequence-evidence,2026-08-08,2026-08-08,1,docs,,surviving,,unknown,medium
+audit-trust-synthesis,2026-08-08,2026-08-08,2,docs,audit-trust-synthesis,surviving,,unknown,high
+deterministic-process-evidence,2026-08-08,2026-08-08,1,docs,,surviving,,unknown,medium
+record-fail-fast-federation,2026-08-08,2026-08-08,1,docs,,surviving,,unknown,medium
+bind-federation-audit-freshness,2026-08-08,2026-08-08,1,docs,,surviving,,unknown,medium
+tighten-model-plane-audit,2026-08-08,2026-08-08,1,docs,,surviving,,unknown,medium
+clarify-federation-audit-validation,2026-08-08,2026-08-08,1,docs,,surviving,,unknown,medium
+deepen-concierge-audit-evidence,2026-08-08,2026-08-08,1,docs,,surviving,,unknown,medium
+architecture-audit-charter-evidence,2026-08-08,2026-08-08,1,docs,,surviving,,unknown,medium
+audit-testing,2026-08-08,2026-08-08,1,docs,audit-testing,surviving,,unknown,high
+audit-charter,2026-08-08,2026-08-08,1,docs,audit-charter,surviving,,unknown,high
+restore-bounded-terminal-scoring,2026-08-09,2026-08-09,1,src,,surviving,,unknown,medium
+audit-independent-review,2026-08-09,2026-08-09,2,docs,audit-independent-review,surviving,,unknown,high
+bound-review-expose-task,2026-08-09,2026-08-09,1,src,,surviving,,unknown,medium
+bind-deterministic-validation-evidence,2026-08-10,2026-08-10,1,src,,surviving,,unknown,medium
+provider-backoff-contract,2026-08-16,2026-09-09,5,docs,provider-backoff-contract,surviving,,2026-08-16 Provider backoff failures (route instability burst),high
+scope-model-review-rejection,2026-08-20,2026-08-20,1,src,completion,surviving,,2026-08-16 Provider backoff failures (route instability burst),medium
+#64,2026-09-02,2026-09-02,1,src,#64,surviving,,unknown,high
+reconcile-landing-target-project,2026-09-04,2026-09-04,1,src,,surviving,,2026-09-09 Provider backoff second burst; wire reconfiguration,medium
+reconcile-landing-target-service,2026-09-04,2026-09-04,1,unchecked,,surviving,,2026-09-09 Provider backoff second burst; wire reconfiguration,medium
+reconcile-landing-target-harden,2026-09-04,2026-09-04,1,unchecked,,surviving,,2026-09-09 Provider backoff second burst; wire reconfiguration,medium
+fence-late-landing-races,2026-09-04,2026-09-04,1,src,fix-completion-landing-maze,surviving,,2026-09-09 Provider backoff second burst; wire reconfiguration,medium
+project-config-sole-execution,2026-09-04,2026-09-04,1,src,,surviving,,2026-09-09 Provider backoff second burst; wire reconfiguration,medium
+completion-landing-reconciliation,2026-09-04,2026-09-04,1,src,,surviving,,2026-09-09 Provider backoff second burst; wire reconfiguration,medium
+genuine-flip-v2-seed,2026-09-05,2026-09-05,1,docs,genuine-flip-v2-seed,surviving,,2026-09-09 Provider backoff second burst; wire reconfiguration,high
+completion-rejections-landing-leases,2026-09-05,2026-09-05,1,src,,surviving,,2026-09-09 Provider backoff second burst; wire reconfiguration,medium
+bound-reviewer-context-surface,2026-09-05,2026-09-05,1,src,pi,surviving,,2026-09-09 Provider backoff second burst; wire reconfiguration,medium
+reject-global-routing-aliases,2026-09-06,2026-09-06,1,src,config,surviving,,2026-09-09 Provider backoff second burst; wire reconfiguration,medium
+finish-project-local-authority,2026-09-06,2026-09-06,1,src,config,surviving,,2026-09-09 Provider backoff second burst; wire reconfiguration,medium
+review-causal-evidence-boundary,2026-09-06,2026-09-06,2,src,review-causal-evidence-boundary,surviving,,2026-09-09 Provider backoff second burst; wire reconfiguration,high
+distinguish-implementation-candidate-evidence,2026-09-09,2026-09-09,1,docs,close-pi-config-acceptance,surviving,,2026-09-09 Provider backoff second burst; wire reconfiguration,medium
+record-config-acceptance-evidence,2026-09-09,2026-09-09,1,docs,close-pi-config-acceptance,surviving,,2026-09-09 Provider backoff second burst; wire reconfiguration,medium
+restore-main-ci-canary,2026-09-09,2026-09-09,2,src,restore-main-ci-canary,surviving,,2026-09-09 Provider backoff second burst; wire reconfiguration,high
+bounded-worker-completion-repair,2026-09-10,2026-09-10,1,src,,surviving,,2026-09-09 Provider backoff second burst; wire reconfiguration,medium
+fail-closed-incomplete-cleanup,2026-09-10,2026-09-10,1,src,fix-smoke-pi-process-leaks;smoke,surviving,,2026-09-09 Provider backoff second burst; wire reconfiguration,medium
+bind-validation-receipt-source,2026-09-10,2026-09-10,1,docs,fix-smoke-pi-process-leaks,surviving,,2026-09-09 Provider backoff second burst; wire reconfiguration,medium
+preserve-smoke-repair-validation,2026-09-10,2026-09-10,1,docs,fix-smoke-pi-process-leaks,surviving,,2026-09-09 Provider backoff second burst; wire reconfiguration,medium
+ownership-scenario-broad-smoke,2026-09-10,2026-09-10,1,src,fix-smoke-pi-process-leaks,surviving,,2026-09-09 Provider backoff second burst; wire reconfiguration,medium
+bounded-source-provider-recovery,2026-09-10,2026-09-10,1,src,,surviving,,2026-09-09 Provider backoff second burst; wire reconfiguration,medium
+allow-completion-help-semantic,2026-09-13,2026-09-13,1,src,,surviving,,"2026-09-13 Config-layer governance disable (auto_evaluate, verify_autospawn)",medium
+record-baseline-admission-reproduction,2026-09-13,2026-09-13,1,docs,,surviving,,"2026-09-13 Config-layer governance disable (auto_evaluate, verify_autospawn)",medium
+scope-cold-baseline-fences,2026-09-13,2026-09-13,1,src,,surviving,,"2026-09-13 Config-layer governance disable (auto_evaluate, verify_autospawn)",medium
+refresh-exact-cargo-baseline,2026-09-13,2026-09-13,1,src,,surviving,,"2026-09-13 Config-layer governance disable (auto_evaluate, verify_autospawn)",medium
+unify-project-route-authority,2026-09-13,2026-09-13,1,src,,surviving,,"2026-09-13 Config-layer governance disable (auto_evaluate, verify_autospawn)",medium
+refuse-conflicting-opaque-model,2026-09-14,2026-09-14,1,src,,surviving,,"2026-09-13 Config-layer governance disable (auto_evaluate, verify_autospawn)",medium
+capture-exact-candidate-real,2026-09-14,2026-09-14,1,src,prove-pi-process-wakeup,surviving,,"2026-09-13 Config-layer governance disable (auto_evaluate, verify_autospawn)",medium
+reconcile-wake-proof-validation,2026-09-14,2026-09-14,1,docs,prove-pi-process-wakeup,surviving,,"2026-09-13 Config-layer governance disable (auto_evaluate, verify_autospawn)",medium
+separate-optional-completion-evidence,2026-09-14,2026-09-14,1,src,,surviving,,"2026-09-13 Config-layer governance disable (auto_evaluate, verify_autospawn)",medium
+remove-incidental-message-proof,2026-09-14,2026-09-14,1,docs,fix-completion-help-after-review,surviving,,"2026-09-13 Config-layer governance disable (auto_evaluate, verify_autospawn)",medium
+prove-service-route-authority,2026-09-14,2026-09-14,1,src,repair-service-start-ci,surviving,,"2026-09-13 Config-layer governance disable (auto_evaluate, verify_autospawn)",medium
+preserve-route-less-service,2026-09-14,2026-09-14,1,src,repair-service-start-ci,surviving,,"2026-09-13 Config-layer governance disable (auto_evaluate, verify_autospawn)",medium
+managed-process-wake-proof,2026-09-14,2026-09-14,1,src,pi,surviving,,"2026-09-13 Config-layer governance disable (auto_evaluate, verify_autospawn)",medium
+stabilize-explicit-selection-release-gate,2026-09-15,2026-09-15,1,src,stabilize-explicit-selection-release-gate,surviving,,"2026-09-13 Config-layer governance disable (auto_evaluate, verify_autospawn)",high
+reject-invalid-opaque-capability,2026-09-15,2026-09-15,1,src,fix-opaque-pi-negative-admission,surviving,,"2026-09-13 Config-layer governance disable (auto_evaluate, verify_autospawn)",medium
+reverify-corrected-opaque-execution,2026-09-15,2026-09-15,1,docs,verify-repaired-pi-execution,surviving,,"2026-09-13 Config-layer governance disable (auto_evaluate, verify_autospawn)",medium
+complete-opaque-launch-contract,2026-09-15,2026-09-15,1,src,,surviving,,"2026-09-13 Config-layer governance disable (auto_evaluate, verify_autospawn)",medium
+retain-semantic-evidence-gaps,2026-09-15,2026-09-15,1,src,fix-semantic-completion-help,surviving,,"2026-09-13 Config-layer governance disable (auto_evaluate, verify_autospawn)",medium
+capture-opaque-boundary-scenario,2026-09-15,2026-09-15,1,src,verify-pi-execution-boundary,surviving,,"2026-09-13 Config-layer governance disable (auto_evaluate, verify_autospawn)",medium
+verify-opaque-execution-boundary,2026-09-15,2026-09-15,1,src,verify-pi-execution-boundary,surviving,,"2026-09-13 Config-layer governance disable (auto_evaluate, verify_autospawn)",medium
+renew-legacy-environment-drifted,2026-09-16,2026-09-16,1,src,,surviving,,"2026-09-13 Config-layer governance disable (auto_evaluate, verify_autospawn)",medium
+reconcile-landing-target-route,2026-09-16,2026-09-16,2,unchecked,,surviving,,"2026-09-13 Config-layer governance disable (auto_evaluate, verify_autospawn)",medium
+stable-environment-identity-deterministic,2026-09-16,2026-09-16,1,src,,surviving,,"2026-09-13 Config-layer governance disable (auto_evaluate, verify_autospawn)",medium
+config:agency-auto-evaluation,2026-08-08,2026-09-13,0,config,,2026-09-13,.wg/config.toml.bak-2026-09-13 diff vs live config,2026-09-13 Config-layer governance disable,high

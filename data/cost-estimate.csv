@@ -1,0 +1,5 @@
+month,model_family,usd_cost_recorded,n_billed_msgs,total_tokens
+2026-08,gpt-5.6-sol,475.05,3032,583841910
+2026-09,gpt-5.6-sol,134.88,1286,195342775
+2026-09,gpt-6-astra,73.61,329,39349853
+2026-09,glm,0.00,584,101897866
