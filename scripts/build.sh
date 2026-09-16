@@ -21,6 +21,9 @@ f"![**Figure 3.** Gate census: constraints added and removed per month, with cum
 s = s.replace("Total recorded metered cost for the window: **$683.55**.",
 "Total recorded metered cost for the window: **$683.55**.\n\n"
 f"![**Figure 4.** Model mix in the session-attributable window; structured metering fields only.]({F}/fig4-models.png){W}\n", 1)
+s = s.replace("why we describe recovery, not proof.\n",
+"why we describe recovery, not proof.\n\n"
+f"![**Figure 5.** Daily unique task completions, current-state ledger, with the September 13 enforcement-autonomy boundary marked.]({F}/fig5-recovery.png){W}\n", 1)
 
 open('paper/paper-build.md', 'w').write(s)
 print('paper/paper-build.md generated')
