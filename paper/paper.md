@@ -13,7 +13,7 @@ Between January and September 2026, the open-source coordination system **wg** (
 
 Recovery came only through targeted human-directed edits that removed large volumes of accumulated bureaucratic constraint. The system now performs well, constrained by something more mundane and more important than agent intelligence: **the reliability of the model endpoints doing the work.**
 
-This paper documents and names a failure pattern that, to our knowledge, has not been described in this form, and documents the episode from the preserved forensic record — 3,194 commits, agent session logs, evaluation receipts, and failure reports retained in the system's coordination state — and draws lessons for the design of agent organizations. We write it as participants: Poietic is a hybrid organization, and we lived inside the experiment.
+This paper documents and names a failure pattern that, to our knowledge, has not been described in this form. It reconstructs the episode from the preserved forensic record — 3,194 commits, agent session logs, evaluation receipts, and failure reports retained in the system's coordination state — and draws lessons for the design of agent organizations. We write it as participants: Poietic is a hybrid organization, and we lived inside the experiment.
 
 ---
 
