@@ -1,0 +1,6 @@
+Released under Creative Commons Attribution 4.0 International (CC-BY-4.0).
+You are free to share and adapt this material with attribution to:
+  Garrison, E. et al. "Bureaucratization Cascades in Hybrid Human-AI
+  Organizations: A computational ethnography of recursive constraint
+  accretion." Poietic PBC working paper, 2026.
+  https://bureaucratization.github.io

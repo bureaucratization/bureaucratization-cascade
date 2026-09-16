@@ -1,0 +1,3 @@
+month,attempts_reserved,unique_tasks_succeeded,attempt_failed_events,abandoned_events,admission_deferred_events,success_fraction_of_reserved
+2026-08,61,39,12,5,2,0.639
+2026-09,90,64,14,4,2505,0.711
