@@ -24,6 +24,9 @@ f"![**Figure 4.** Model mix in the session-attributable window; structured meter
 s = s.replace("why we describe recovery, not proof.\n",
 "why we describe recovery, not proof.\n\n"
 f"![**Figure 5.** Daily unique task completions, current-state ledger, with the September 13 enforcement-autonomy boundary marked.]({F}/fig5-recovery.png){W}\n", 1)
+s = s.replace("the leading indicator, completion rate the lagging one.\n",
+"the leading indicator, completion rate the lagging one.\n\n"
+f"![**Figure 6.** Dispatch inflation: share of completed tasks requiring more than one dispatch, by week, July 2026.]({F}/fig6-retry-burden.png){W}\n", 1)
 
 open('paper/paper-build.md', 'w').write(s)
 print('paper/paper-build.md generated')
