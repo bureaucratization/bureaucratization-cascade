@@ -166,7 +166,7 @@ The humans of Poietic directed this work; the agents built it; the record they l
 
 ---
 
-*Poietic PBC builds open tools for legible human–AI collaboration. wg is available at graphwork.github.io. The redacted forensic dataset accompanying this paper will be published at poietic.life/forensics upon release, scoped per the audit described in §6.*
+*Poietic PBC builds open tools for legible human–AI collaboration. wg is available at graphwork.github.io. Paper home: https://bureaucratization.github.io. The redacted forensic dataset accompanying this paper will be published upon release, scoped per the audit described in §6.*
 
 **Figures (produced, in order of appearance):**
 1. Monthly commit velocity with governance-vocabulary overlay (`data/`, `figures/fig1-velocity.png`)
