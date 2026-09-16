@@ -64,7 +64,7 @@ Monthly commit volume tells the first half of the story:
 
 \* Proxy: fraction of commit subjects matching `contract|gate|verify|proof|evidence|admission|reconcil` (case-insensitive). September's high share reflects **volume collapse while governance work continued at a constant absolute rate**—not a surge of removals (§3.5). The large-scale constraint removal that restored operation is documented in configuration snapshots and resolution records, not in commit subjects.
 
-![**Figure 1.** Monthly commit velocity (bars) and governance-vocabulary share of commit subjects (line). The April peak and the May collapse frame the ratchet period; September's vocabulary spike is volume collapse with governance work at constant absolute rate.](/home/bot/wg-forensics/figures/fig1-velocity.png){width=100%}
+![**Figure 1.** Monthly commit velocity (bars) and governance-vocabulary share of commit subjects (line). The April peak and the May collapse frame the ratchet period; September's vocabulary spike is volume collapse with governance work at constant absolute rate.](figures/fig1-velocity.png){width=100%}
 
 ### 3.2 Phase I—growth (January–March)
 
@@ -86,7 +86,7 @@ Each commit closed a hole that a prior commit had opened. None removed a constra
 
 \* Commit subjects truncated for readability; full subjects and diffs are in the repository record. The five provider-backoff-contract commits touch only `docs/design-provider-failure-backoff.md`—verified docs-only, no source changes.
 
-![**Figure 4.** The provider-backoff-contract sequence: cumulative size of the specification document after each hardening commit. Two bursts separated by a three-week gap; the functionality the contract governed never shipped during the period shown.](/home/bot/wg-forensics/figures/fig4-ratchet.png){width=100%}
+![**Figure 4.** The provider-backoff-contract sequence: cumulative size of the specification document after each hardening commit. Two bursts separated by a three-week gap; the functionality the contract governed never shipped during the period shown.](figures/fig4-ratchet.png){width=100%}
 
 ### 3.4 Phase III—collapse (May)
 
@@ -105,7 +105,7 @@ Recovery did not come from smarter models, and—importantly—it is not visible
 
 The system now performs well. Which brings us to the finding we did not expect.
 
-![**Figure 2.** Gate census: constraints added (red) and removed (green) per month, with cumulative active constraints (line). Accretion tracks incidents; the collapse months are an accretion freeze, not a recovery; the ratchet resumes in July.](/home/bot/wg-forensics/figures/fig2-accretion.png){width=100%}
+![**Figure 2.** Gate census: constraints added (red) and removed (green) per month, with cumulative active constraints (line). Accretion tracks incidents; the collapse months are an accretion freeze, not a recovery; the ratchet resumes in July.](figures/fig2-accretion.png){width=100%}
 
 ---
 
@@ -123,7 +123,7 @@ The collapse phase repeatedly produced tasks that *evaluated the absence of work
 
 In the session-attributable window (August 8–September 16), structured metering fields—not text mentions, which conflate models *discussed* in prompts with models *executed*—show a three-tier workforce: **gpt-5.6-sol dominant** ($609.93 recorded metered cost, 4,318 billed messages), **gpt-6-astra entering mid-September** ($73.61, 329 messages—a model-generation shift coinciding with the recovery phase and the documented human intervention), and a **zero-metered free tier** (GLM-class via a low-cost route, 584 messages) handling weak-tier work. Total recorded metered cost for the window: **$683.55**.
 
-![**Figure 3.** Model mix in the session-attributable window. Structured metering fields only; text-mention frequency is deliberately excluded (see §5). The gpt-6-astra entry coincides with the recovery phase.](/home/bot/wg-forensics/figures/fig3-models.png){width=100%}
+![**Figure 3.** Model mix in the session-attributable window. Structured metering fields only; text-mention frequency is deliberately excluded (see §5). The gpt-6-astra entry coincides with the recovery phase.](figures/fig3-models.png){width=100%}
  The earlier era (January–July) shows a different executor generation in dated documents and configuration records (a Claude CLI executor alongside GPT-5.5-class models), but per-session attribution for the collapse period is unrecoverable—see §5.
 
 Our strong impression, with the quantifiable portion above and the rest pending: **which frontier model did the work mattered far less than whether it was fast, generally capable, awake, and did not fail mid-task.** Superficially "smarter" models were, if anything, more prone to elaborate hardening behavior—more contracts, more proofs, more meta-governance. The binding constraints on organizational throughput were latency, availability, and failure behavior. An organization of quick, reliable, moderately capable agents outproduced an organization of brilliant, intermittent ones.
