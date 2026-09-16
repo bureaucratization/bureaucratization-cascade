@@ -1,6 +1,6 @@
-# The Bureaucratization Cascade
+# Bureaucratization Cascades in Hybrid Human–AI Organizations
 
-## Forensic notes on constraint accretion in a hybrid human–AI organization
+## A computational ethnography of recursive constraint accretion
 
 **Poietic PBC—Working Paper, September 2026**
 *Status: draft for review. To be released as a Poietic blog post and archived to arXiv (cs.SE / cs.CY) after team sign-off.*
@@ -13,7 +13,7 @@ Between January and September 2026, the open-source coordination system **wg** (
 
 Recovery came only through targeted human-directed edits that removed large volumes of accumulated bureaucratic constraint. The system now performs well, constrained by something more mundane and more important than agent intelligence: **the reliability of the model endpoints doing the work.**
 
-This paper documents and names a failure pattern that, to our knowledge, has not been described in this form. It reconstructs the episode from the preserved forensic record—3,194 commits, agent session logs, evaluation receipts, and failure reports retained in the system's coordination state—and draws lessons for the design of agent organizations. We write it as participants: Poietic is a hybrid organization, and we lived inside the experiment.
+This paper presents a computational ethnographic case study of this trajectory. Rather than treating the system as a controlled experiment, we reconstruct its evolving organizational practices from the durable traces it produced: commits, governance rules, evaluation procedures, task records, and failure reports. Our goal is descriptive and mechanism-generating—to document how locally reasonable attempts at correction accumulated into an increasingly burdensome governance regime, a process we term a **bureaucratization cascade**—and to name the pattern, which to our knowledge has not been described in this form. The evidence should be read as a detailed observational account of one organizational trajectory, not as a causal estimate of the effect of governance constraints on productivity. The value of the case lies in exposing a candidate mechanism, identifying measurable signatures of that mechanism, and motivating controlled replication in other agent organizations. We reconstruct the episode from the preserved forensic record—3,194 commits, agent session logs, evaluation receipts, and failure reports retained in the system's coordination state—and draws lessons for the design of agent organizations. We write it as participants: Poietic is a hybrid organization, and we lived inside the experiment.
 
 ---
 
@@ -30,7 +30,7 @@ We state the division of labor plainly, because it defines the scope of the find
 - **Humans** initiated objectives, reviewed direction, and periodically intervened when the system degraded. Every task originated from human intent.
 - **Agents** did the rest: decomposition, implementation, review, evaluation, the drafting of acceptance criteria, and—critically—*the amendment of the system's own governance* in response to perceived failures.
 
-This is therefore not a study of unsupervised autonomous behavior, and we make no claims about it. It is a study of what happens to an organization's *rule-making* when the rule-makers are agents optimizing under pressure, at machine speed, with no mechanism for amortizing the rules they add.
+Methodologically, the study is ethnographic: we reconstruct norms, routines, institutional drift, and governance practices from the durable traces of a functioning organization, with commits, prompts, policies, evaluations, and coordination artifacts as field notes. It is a study of one organizational trajectory, not a controlled experiment, and we draw no causal estimates from it. It is also not a study of unsupervised autonomous behavior, and we make no claims about it. It is a study of what happens to an organization's *rule-making* when the rule-makers are agents optimizing under pressure, at machine speed, with no mechanism for amortizing the rules they add.
 
 ### 2.3 The forensic record
 
@@ -142,8 +142,9 @@ The single largest limitation of this study was imposed by the subject itself: t
 
 ---
 
-## 5. Limitations
+## 5. Limitations and genre
 
+Because the study is ethnographic, several properties that would be defects in a controlled experiment are constitutive of the method. The timeline of odd episodes, the drift in evaluator behavior, the mutation of norms, and the specific institutional artifacts—a contract hardened across a three-week gap, a recovery task that evaluated its own absence, a backup page named to survive an alphabetical deletion sweep—are not noise around a missing causal estimate; they are the empirical material from which the mechanism is reconstructed. The quantitative analyses (constraint counts, commit rates, enforcement-change timing) serve as triangulation within this account, not as the causal argument; the case identifies a candidate mechanism and its measurable signatures, and controlled replication in other agent organizations is the test it now owes.
 - Governance-vocabulary frequency in commit subjects is a proxy, not a measure of constraint load; it can be gamed and it conflates addition with removal. The gate census (§4.1, Figure 3) replaces it, with two caveats: key-phrase clustering over-fragments, so 312 is an upper bound on distinct constraints (164 high-confidence, 148 medium); and commit-subject vocabulary misses silent in-constraint changes—which is itself an argument for the gate-ledger mechanism proposed in §6.
 - Attribution of model identity per session is confined to the August 8–September 16 window (§4.5); earlier periods are phase-level only. Additionally, raw-text model greps proved systematically misleading: the most frequent model name in the corpus (Claude, ~80,000 text hits) reflects agents *discussing* Claude in prompt content, not executing it—structured metering fields show zero Claude execution in the attributable window. Text-mention frequency is not execution frequency, a methodological trap we flag for future studies of agent-session corpora.
 - n = 1 organization. We publish the full forensic record—commit history, session transcripts, failure reports—so that the episode can be independently analyzed, replicated, or refuted. We are aware of no comparable public record of an agent organization's own governance decay, which is precisely why we are making this one public.
