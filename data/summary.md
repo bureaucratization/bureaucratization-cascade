@@ -1,11 +1,11 @@
-# wg model-attribution — extraction summary
+# wg model-attribution—extraction summary
 
 - Agent dirs scanned: 14; pi-sessions parsed: 18
 - Attempt state.json records: 130; operations-log model entries: 23
 - model_change events found in sessions: 21
 - **Session-level coverage: 2026-08-08 → 2026-09-16 only.** The event ledger (lifecycle/events.jsonl) starts 2026-08-08; .wg state was compacted/reset at that date. Jan–Jul attribution is phase-level only (git config commits + repo analysis docs).
 
-## Recorded cost by model family (from usage.cost fields in session logs — actual metered values, not estimates)
+## Recorded cost by model family (from usage.cost fields in session logs—actual metered values, not estimates)
 - gpt-5.6-sol: $609.93 across 4318 billed messages
 - gpt-6-astra: $73.61 across 329 billed messages
 - glm: $0.00 across 584 billed messages
@@ -26,9 +26,9 @@ Sources: git config commits naming models; dated analysis docs (COMPARATIVE_PROM
 - gpt-5.5 / gpt-5.4 appear in mismatch-triage docs; 2026-09-04 commit: 'config: route Pi workers through Codex Sol' (gpt-5.6-sol era begins); 2026-09-16: workers → lunaroute glm-5.3-flash, agency weak tier → deepseek-4.1-flash.
 
 ## Notable findings for the paper
-1. **gpt-6-astra appears in September 2026** (329 billed messages, $73.61) — a model generation shift during the recovery phase, consistent with the human intervention timeline.
-2. **glm tier runs at $0.00 recorded cost** (584 msgs, ~102M tokens) — routed via lunaroute; this is the "cheap tier" from the 2026-09-16 config commit. A two-tier cost architecture (expensive worker + free weak tier) is visible in the metering itself.
-3. **Pre-Aug 8 usage is unrecoverable from .wg** — the entire Jan–Jul cost story is archaeologically lost at the session level; only git commits and dated docs survive. This is itself a finding: the coordination record's retention policy destroyed the forensic record of the collapse period.
+1. **gpt-6-astra appears in September 2026** (329 billed messages, $73.61)—a model generation shift during the recovery phase, consistent with the human intervention timeline.
+2. **glm tier runs at $0.00 recorded cost** (584 msgs, ~102M tokens)—routed via lunaroute; this is the "cheap tier" from the 2026-09-16 config commit. A two-tier cost architecture (expensive worker + free weak tier) is visible in the metering itself.
+3. **Pre-Aug 8 usage is unrecoverable from .wg**—the entire Jan–Jul cost story is archaeologically lost at the session level; only git commits and dated docs survive. This is itself a finding: the coordination record's retention policy destroyed the forensic record of the collapse period.
 4. The earlier draft's claim that 'Claude dominates the log' was a text-mention artifact and must be corrected in the paper.
 
 ## Caveats

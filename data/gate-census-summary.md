@@ -38,7 +38,7 @@ Generated 2026-09-16 from /home/bot/wg git history + .wg config snapshots. READ-
 - push-and-verify-ci: 3 commits (2026-03-13 -> 2026-03-13, unchecked)
 
 ## Notable removal events
-- **2026-09-13 configuration disable**: `.wg/config.toml.bak-2026-09-13T02-32-08Z` vs live config — `auto_evaluate` true->false; `verify_autospawn_enabled = false` (verify gates no longer spawn agents autonomously); [agency] block retuned. Gates were not deleted; they were switched from autonomous to manual — consistent with the paper's 'subtraction at the configuration layer' (draft §3.5), refined: **the recovery disabled gate *enforcement autonomy*, not gate existence.**
+- **2026-09-13 configuration disable**: `.wg/config.toml.bak-2026-09-13T02-32-08Z` vs live config—`auto_evaluate` true->false; `verify_autospawn_enabled = false` (verify gates no longer spawn agents autonomously); [agency] block retuned. Gates were not deleted; they were switched from autonomous to manual—consistent with the paper's 'subtraction at the configuration layer' (draft §3.5), refined: **the recovery disabled gate *enforcement autonomy*, not gate existence.**
 - Removal-verb governance commits cluster in June (autopoietic-loop recovery) and September.
 
 ## Trigger-incident linkage (birth within ±5 days, inferred)
@@ -137,12 +137,12 @@ Generated 2026-09-16 from /home/bot/wg git history + .wg config snapshots. READ-
 - config:agency-auto-evaluation (2026-08-08) near 2026-09-13 Config-layer governance disable
 
 ## Confidence caveats
-- Suffix-based clustering (topic in parens) is high confidence; key-phrase clustering merges/splits imperfectly — treat medium-confidence rows as indicative.
+- Suffix-based clustering (topic in parens) is high confidence; key-phrase clustering merges/splits imperfectly—treat medium-confidence rows as indicative.
 - Commit-subject vocabulary is a proxy; silent constraint changes inside src/ without governance vocabulary are invisible to this census (motivates §6 'gate ledger' feature).
 - Config snapshots exist only for Aug 8 and Sep 13; earlier config-layer ratcheting is unrecorded.
 
 ## The singleton finding (added 2026-09-16, post-analysis)
 
-- **290 of 311 constraint topics (93%) have exactly one commit** — born once, never revisited, never retired. Only 21 topics were ever hardened (2+ commits), and only 14 removal-verb governance commits exist in the entire history.
-- Interpretation: the ratchet is not a story of constraints being *maintained* — it is a story of constraints being **emitted**. Governance in this system behaved like an append-only log written by each incident's responding agent. Fire-and-forget rule-making at machine speed, with retirement ~40x rarer than birth (14 removal commits + 1 config event vs ~344 additions).
-- This sharpens the paper's §4.1: the missing mechanism is not gate review (nothing was reviewed) but **gate amortization of any kind** — there was no path by which a constraint could naturally die.
+- **290 of 311 constraint topics (93%) have exactly one commit**—born once, never revisited, never retired. Only 21 topics were ever hardened (2+ commits), and only 14 removal-verb governance commits exist in the entire history.
+- Interpretation: the ratchet is not a story of constraints being *maintained*—it is a story of constraints being **emitted**. Governance in this system behaved like an append-only log written by each incident's responding agent. Fire-and-forget rule-making at machine speed, with retirement ~40x rarer than birth (14 removal commits + 1 config event vs ~344 additions).
+- This sharpens the paper's §4.1: the missing mechanism is not gate review (nothing was reviewed) but **gate amortization of any kind**—there was no path by which a constraint could naturally die.

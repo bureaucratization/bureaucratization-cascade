@@ -1,4 +1,4 @@
-# Dataset Manifest — The Bureaucratization Cascade
+# Dataset Manifest—The Bureaucratization Cascade
 
 **Release version:** 1.0 · September 16, 2026
 **License:** CC-BY-4.0 (data and reports); the paper itself is separate.
@@ -19,7 +19,7 @@ Excluding prompt and transcript content costs the paper nothing: every claim is 
 
 ## Contents
 
-### `lifecycles/` — sanitized per-task traces (7 deployments)
+### `lifecycles/`—sanitized per-task traces (7 deployments)
 
 | File | Org | Rows | Columns |
 |---|---|---|---|
@@ -28,20 +28,20 @@ Excluding prompt and transcript content costs the paper nothing: every claim is 
 | `primary-july-tasks.csv` | wg primary (July quarantine archive) | 253 | task_id, classification, status, family, created_at, completed_at, latency_days, dispatch_count |
 | `pgwas-tasks.csv` | pgwas_R01 (May 19–Jun 5) | 848 | task_id, classification, status, created_month, completed_month |
 | `cancerpangenome-tasks.csv` | cancer_pangenome_R01 (Feb/May eras) | 385 | era, task_id, classification, status, created_at, completed_at, latency_min, dispatch_or_retry |
-| `*-monthly.csv` | monthly aggregates | — | content-free |
+| `*-monthly.csv` | monthly aggregates |—| content-free |
 
 **Classification rule** (derived `classification` column): `experiment` = verify-timeout/CLI-test/probe/smoke/repro family; `governance` = title (not included) began with `evaluate/flip/assign agent/quality-pass/verify/admin/checkpoint/admission` or carried an `agency` tag; all else `work`. **Known deviation:** this conservative prefix rule reproduces the paper's pgwas governance share within ~2 points (76% vs 78%) but yields ~half the paper's per-era cancer_pangenome shares (0%, 6%, 13% vs 0%, 12%, 24%), which additionally counted verification-type work tasks as governance. Both classifications show the same linear (non-accelerating) pattern. The rule is stated so results are recomputable either way.
 
-### `governance/` — evidence for the paper's claims
+### `governance/`—evidence for the paper's claims
 
-- `gate-census.csv`, `accretion-curve.csv` — the constraint census (312 topics) and monthly add/remove curve
-- `model-mix-by-month.csv`, `cost-estimate.csv` — metered model attribution (Aug 8–Sep 16 window)
-- `fact-check.md` — verification of every commit hash, quote, and number in the paper (24 PASS / 0 FAIL)
-- `redaction-audit.md`, `git-history-secrets.md`, `base64-rescan.md` — the three security audit legs: working tree, full git history (gitleaks, all branches), and decode-and-rescan of 14,818 base64 payloads with positive controls. **All clean: zero live credentials.**
+- `gate-census.csv`, `accretion-curve.csv`—the constraint census (312 topics) and monthly add/remove curve
+- `model-mix-by-month.csv`, `cost-estimate.csv`—metered model attribution (Aug 8–Sep 16 window)
+- `fact-check.md`—verification of every commit hash, quote, and number in the paper (24 PASS / 0 FAIL)
+- `redaction-audit.md`, `git-history-secrets.md`, `base64-rescan.md`—the three security audit legs: working tree, full git history (gitleaks, all branches), and decode-and-rescan of 14,818 base64 payloads with positive controls. **All clean: zero live credentials.**
 
 ## Provenance
 
-Extracted from the coordination state directories of the deployments (task archives, lifecycle ledgers, completion transactions) by scripted analysis; timestamps decoded from UUIDv7 event-ID prefixes where explicit fields were absent (validated 116/116 against explicit timestamps). Task-level records for the primary org's January–July period were destroyed by an August 8 state reset that predates all surviving backups — see the paper §4.5.
+Extracted from the coordination state directories of the deployments (task archives, lifecycle ledgers, completion transactions) by scripted analysis; timestamps decoded from UUIDv7 event-ID prefixes where explicit fields were absent (validated 116/116 against explicit timestamps). Task-level records for the primary org's January–July period were destroyed by an August 8 state reset that predates all surviving backups—see the paper §4.5.
 
 ## Privacy posture
 
