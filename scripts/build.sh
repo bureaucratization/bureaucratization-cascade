@@ -9,6 +9,9 @@ s = open('paper/paper.md').read()
 s = s.replace(' \u2014 ', '\u2014').replace('\u2212', '-')
 F = 'figures'; W = '{width=100%}'
 
+s = s.replace("and the birth of the provider-backoff-contract (Figure 8).\n",
+"and the birth of the provider-backoff-contract (Figure 8).\n\n"
+f"![**Figure 8.** Constraint births per month against the provider-reliability event timeline. The July churn week brackets the constraint spike.]({F}/fig8-ignition.png){W}\n", 1)
 s = s.replace("unlike a bare correlation between rules and output.\n",
 "unlike a bare correlation between rules and output.\n\n"
 f"![**Figure 7.** The progression over time: rule stock (top), dispatch burden with the surviving task-grain windows marked (middle), and throughput (bottom).]({F}/fig7-progression.png){W}\n", 1)
