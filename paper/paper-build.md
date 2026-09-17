@@ -25,7 +25,7 @@ wg is a dependency-graph task coordination system for humans and AI agents (`gra
 
 ### 2.2 The arrangement under study
 
-We state the division of labor plainly, because it defines the scope of the findings:
+The division of labor defines the scope of the findings:
 
 - **Humans** initiated objectives, reviewed direction, and periodically intervened when the system degraded. Every task originated from human intent.
 - **Agents** did the rest: decomposition, implementation, review, evaluation, the drafting of acceptance criteria, and—critically—*the amendment of the system's own governance* in response to perceived failures.
@@ -132,7 +132,7 @@ In the session-attributable window (August 8–September 16), structured meterin
 ![**Figure 4.** Model mix in the session-attributable window; structured metering fields only.](figures/fig4-models.png){width=100%}
  The earlier era (January–July) shows a different executor generation in dated documents and configuration records (a Claude CLI executor alongside GPT-5.5-class models), but per-session attribution for the collapse period is unrecoverable—see §5.
 
-We state the following as an observation from the recovery-era window only, not a finding about the collapse period, for which session-level attribution is unrecoverable (§4.5): **in this window, which frontier model did the work appeared to matter far less than whether it was fast, generally capable, awake, and did not fail mid-task.** We further observed, impressionistically, that models prone to elaborate hardening behavior—more contracts, more proofs, more meta-governance—were not the ones that moved the organization's throughput. The binding constraints on throughput appeared to be latency, availability, and failure behavior. These observations motivate the hypothesis that an organization of quick, reliable, moderately capable agents can outproduce an organization of brilliant, intermittent ones; testing it requires the pre-August attribution this record cannot supply, and we flag it as a direction for systems that retain their logs.
+The following observation is drawn from the recovery-era window only; the collapse period lacks session-level attribution (§4.5): **in this window, which frontier model did the work appeared to matter far less than whether it was fast, generally capable, awake, and did not fail mid-task.** We further observed, impressionistically, that models prone to elaborate hardening behavior—more contracts, more proofs, more meta-governance—were not the ones that moved the organization's throughput. The binding constraints on throughput appeared to be latency, availability, and failure behavior. These observations motivate the hypothesis that an organization of quick, reliable, moderately capable agents can outproduce an organization of brilliant, intermittent ones; testing it requires the pre-August attribution this record cannot supply, and we flag it as a direction for systems that retain their logs.
 
 ### 4.4 The recovery instrument was subtraction, and nothing else in the toolchain could perform it
 
