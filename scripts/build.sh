@@ -9,6 +9,9 @@ s = open('paper/paper.md').read()
 s = s.replace(' \u2014 ', '\u2014').replace('\u2212', '-')
 F = 'figures'; W = '{width=100%}'
 
+s = s.replace("unlike a bare correlation between rules and output.\n",
+"unlike a bare correlation between rules and output.\n\n"
+f"![**Figure 7.** The progression over time: rule stock (top), dispatch burden with the surviving task-grain windows marked (middle), and throughput (bottom).]({F}/fig7-progression.png){W}\n", 1)
 s = s.replace("documented in configuration snapshots and resolution records, not in commit subjects.\n",
 "documented in configuration snapshots and resolution records, not in commit subjects.\n\n"
 f"![**Figure 1.** Monthly commit velocity (bars) and governance-vocabulary share of commit subjects (line).]({F}/fig1-velocity.png){W}\n", 1)
