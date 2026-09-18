@@ -871,7 +871,7 @@ Survived by: atomic saves, a concierge, and a written constitution.
 
 ## Epilogue: what the book is for
 
-The paper that grew alongside this book argues that agents can turn transient incidents into persistent institutional state faster than that state is retired, and that the earliest symptom is rising acceptance burden rather than falling completion. The book exists because the paper needed the record to be true, and the record needed reading.
+The paper that grew alongside this book argues that agents turned transient incidents into durable authority over work—memory became policy became the power to block—and that recovery came from separating accumulated knowledge from that authority: keep the knowledge, reduce its power to block work. The earliest symptom was rising acceptance burden, not falling completion. The book exists because the paper needed the record to be true, and the record needed reading.
 
 Three things the book adds that the paper cannot carry. First, texture: the constitution that forbids "a run that succeeds only after repeated manual retries" was written by the hand that had spent a month performing those retries. Second, the counterfactual: the same operator, the same tool, the same machines ran more than seventy-five other deployments that never cascaded—the disease needed the sustained organization, not the machinery. Third, the moral: every governance layer in this story—the gates, the archive policy, the gitignore entry from week three—was a rule written once and never reviewed, and the only mechanism that worked against them was a human reading the record and deleting.
 
