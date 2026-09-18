@@ -104,7 +104,7 @@ February 3 adds the matrix-lite Matrix client (the first communication substrate
 
 ## February: audits, ADRs, and the org-eval experiment (Feb 6–28)
 
-Mid-February is dominated by audit cycles: fourteen consecutive "Audit cycle cleanup/fixes" commits (Feb 14–15), addressing clippy warnings, dead code, error handling, Unicode truncation, shell escaping, atomic saves — notably, "add validation, atomic saves, better diagnostics" appears on **Feb 15**, nearly five months before atomic saves would be rebuilt as a response to the June graph loss. The hygiene instinct was present from the start; it simply was not a mechanism.
+Mid-February is dominated by audit cycles: fourteen consecutive "Audit cycle cleanup/fixes" commits (Feb 14–15), addressing clippy warnings, dead code, error handling, Unicode truncation, shell escaping, atomic saves — "add validation, atomic saves, better diagnostics" appears on **Feb 15**, nearly five months before atomic saves would be rebuilt as a response to the June graph loss. The hygiene instinct was present from the start; it simply was not a mechanism.
 
 The late-February record is an explosion of ambition: 114 commits in the final two weeks of the month. February 24–26 brings ASCII DAG visualization with box-drawing characters, a TUI search UX, token usage display with "in/out/val slash notation," a four-layer LLM test suite ("snapshots, contracts, mock executor, Haiku smoke"), typst documentation conversion, and `57489e2a` — "wg setup auto-installs skill/bundle for chosen executor" — the first executor-choice plumbing.
 
@@ -114,7 +114,7 @@ The vocabulary shift is the story of the fortnight: by February 27 the record sp
 
 The window closes (Feb 28) with improvement-loop commits — "improvement-loop-1: extract evolve module... clean dead code" through "improvement-loop-3: split spawn/main modules" — the first recorded *improvement loops*, an explicit self-improvement pattern that foreshadows the June autopoietic loop and its failure report.
 
-## What the first 30 days look like, in summary
+## The first 30 days
 
 - **Jan 18:** library, CLI, notes. **Jan 19:** self-hosting begins; the agent protocol written.
 - **Jan 21–24:** layered construction to an autonomous runtime with a "goal task."
@@ -238,7 +238,7 @@ The only surviving witness to the death is a daemon log at the *original* checko
 > `2026-06-18T11:48:10.014Z [INFO] Coordinator tick #1927 starting (max_agents=8, executor=codex)`
 > `2026-06-18T11:48:10.018Z [ERROR] Coordinator tick error: Failed to load graph for task-aware reaping`
 
-From that tick until the log's final entry on **June 22, 22:00**, the daemon logged the same error on essentially every tick — **76,371 recorded failures across two rotated files** (`daemon.log.1`: 53,318; `daemon.log`: 23,053), while continuing to start coordinators with `executor=codex`. The service was alive. It was simply blind: the graph it needed to load was not there to load.
+From that tick until the log's final entry on **June 22, 22:00**, the daemon logged the same error on every tick — **76,371 recorded failures across two rotated files** (`daemon.log.1`: 53,318; `daemon.log`: 23,053), while continuing to start coordinators with `executor=codex`. The service was alive. It was simply blind: the graph it needed to load was not there to load.
 
 The same day, June 18, the record shows an adjacent failure in the executor layer: `fix: eliminate nex streaming interruption (error decoding response body)`, whose body documents a request-timeout misdiagnosis cutting healthy long generations — *"[reqwest] bytes_stream() maps EVERY body error to Kind::Decode ... the client's 300s TOTAL request timeout cut healthy long generations"*. Read strictly, that fix explains a streaming symptom, not the missing graph. But it establishes that June 18 was a day of compounding, partly-misdiagnosed failures in the execution layer.
 
@@ -595,7 +595,7 @@ This is the gummy pattern in commit form: the machinery of acceptance — landin
 
 ### September 4: the fleet re-routes
 
-Amid the tightening, one date marks a quiet revolution: September 4, when two config commits routed Pi workers through "Codex Sol" and Pi agency reviews through "Codex Luna," followed by "make project config sole execution authority." This is the gpt-6-astra-era fleet arriving — the mid-September model-generation shift the metering data confirms (gpt-6-astra: $73.61 across 329 billed messages after this date). The organization was re-founding its model stack on project-local Pi authority at the same moment it was tightening every acceptance surface. New models, new authority structure, new tightness — all in the same week. It is worth noting the coincidence: the model-generation shift and the peak tightness arrive together, and the recovery that follows will be credited to the config change. The ledger cannot fully separate these causes; the paper says so.
+Amid the tightening, one date marks a quiet revolution: September 4, when two config commits routed Pi workers through "Codex Sol" and Pi agency reviews through "Codex Luna," followed by "make project config sole execution authority." This is the gpt-6-astra-era fleet arriving — the mid-September model-generation shift the metering data confirms (gpt-6-astra: $73.61 across 329 billed messages after this date). The organization was re-founding its model stack on project-local Pi authority at the same moment it was tightening every acceptance surface. New models, new authority structure, new tightness — all in the same week. The coincidence is sharp: the model-generation shift and the peak tightness arrive together, and the recovery that follows will be credited to the config change. The ledger cannot fully separate these causes; the paper says so.
 
 ### The deferral anomaly
 

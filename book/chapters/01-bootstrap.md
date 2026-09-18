@@ -38,7 +38,7 @@ February 3 adds the matrix-lite Matrix client (the first communication substrate
 
 ## February: audits, ADRs, and the org-eval experiment (Feb 6–28)
 
-Mid-February is dominated by audit cycles: fourteen consecutive "Audit cycle cleanup/fixes" commits (Feb 14–15), addressing clippy warnings, dead code, error handling, Unicode truncation, shell escaping, atomic saves — notably, "add validation, atomic saves, better diagnostics" appears on **Feb 15**, nearly five months before atomic saves would be rebuilt as a response to the June graph loss. The hygiene instinct was present from the start; it simply was not a mechanism.
+Mid-February is dominated by audit cycles: fourteen consecutive "Audit cycle cleanup/fixes" commits (Feb 14–15), addressing clippy warnings, dead code, error handling, Unicode truncation, shell escaping, atomic saves — "add validation, atomic saves, better diagnostics" appears on **Feb 15**, nearly five months before atomic saves would be rebuilt as a response to the June graph loss. The hygiene instinct was present from the start; it simply was not a mechanism.
 
 The late-February record is an explosion of ambition: 114 commits in the final two weeks of the month. February 24–26 brings ASCII DAG visualization with box-drawing characters, a TUI search UX, token usage display with "in/out/val slash notation," a four-layer LLM test suite ("snapshots, contracts, mock executor, Haiku smoke"), typst documentation conversion, and `57489e2a` — "wg setup auto-installs skill/bundle for chosen executor" — the first executor-choice plumbing.
 
@@ -48,7 +48,7 @@ The vocabulary shift is the story of the fortnight: by February 27 the record sp
 
 The window closes (Feb 28) with improvement-loop commits — "improvement-loop-1: extract evolve module... clean dead code" through "improvement-loop-3: split spawn/main modules" — the first recorded *improvement loops*, an explicit self-improvement pattern that foreshadows the June autopoietic loop and its failure report.
 
-## What the first 30 days look like, in summary
+## The first 30 days
 
 - **Jan 18:** library, CLI, notes. **Jan 19:** self-hosting begins; the agent protocol written.
 - **Jan 21–24:** layered construction to an autonomous runtime with a "goal task."
