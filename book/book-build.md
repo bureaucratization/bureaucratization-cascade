@@ -44,13 +44,13 @@ On January 18, 2026, a developer bootstrapped a task-graph library and, by Janua
 - **Feb 1–27** — The three seeds planted: verification workflows (Feb 1), the Agency system (Feb 6, the same day `.workgraph` enters `.gitignore`), autopoietic task generation (Feb 27)
 - **Mar 3–5** — FLIP is born (scoring + Opus-triggered verification)
 - **Apr 5–11** — Verify gates born in the triage week; credit-exhaustion abandonments; the ~95-constraint burst; 1,558 tests green at peak
-- **May–Jun** — The quiet (operator running two grant campaigns elsewhere, 93–95% completion) and the substrate crisis: corruption hardening (Jun 2), the workgraphworksgood rename (Jun 16), the graph dies (Jun 18, 11:48 — 76,371 unobserved ticks), divergent mains reconciled (Jun 26); executor work consumes 47% of the window's commits
+- **May–Jun** — The quiet (operator running two grant campaigns elsewhere, 93–95% completion) and the substrate crisis: corruption hardening (Jun 2), the workgraph→worksgood rename (Jun 16), the graph dies (Jun 18, 11:48 — 76,371 unobserved ticks), divergent mains reconciled (Jun 26); executor work consumes 47% of the window's commits
 - **Jul 4–11** — The churn week: the graph recreated, agency automation switched on, eight route states in eight days, the constraint spike (~28 defensible topics)
 - **Aug 1–5** — Surprise mass-archive held (Aug 1), auto-archive made opt-in (Aug 2), atomic-save designed (Aug 3), disk exhaustion (Aug 5) triggers the atomic quarantine tagged `recovery/overengineered-cutover-20260805`
 - **Aug 7–10** — The teardown day (47 subtractive commits), the rescue manifesto (357 lines), evaluators demoted to witnesses; fresh clone from GitHub (Aug 7); current ledger begins (Aug 8)
 - **Aug 20–Sep 1** — Convalescence: one commit in twelve days
 - **Sep 2–6** — The rebuild sprint: project-local Pi config, the Sol/Luna re-route
-- **Sep 13–16** — Enforcement autonomy disabled; completions 935/week; the constitution (Sep 14); registry retired and forward work resumes (Sep 16)
+- **Sep 13–16** — Enforcement autonomy disabled; completions 9→35/week; the constitution (Sep 14); registry retired and forward work resumes (Sep 16)
 - **Standing** — Automation stays off, gates concierge-attended, burden signature absent
 
 ---
@@ -140,7 +140,7 @@ The cast is one human (all 192 commits authored by Erik Garrison) and, from late
 
 March opened quietly relative to what followed: 765 commits in the month, opening with maintenance and self-observation. On March 9–10 the record shows an organization studying itself — eval agents taught to record token usage, aggregated agency token usage (the  marker) surfaced on parent tasks, a coordination-model design document, and a "design deliberation consensus document" produced through a discussion-host facilitation task. The org was already running multi-agent deliberations about its own design.
 
-The first hardening fingerprints also appear in March, in miniature: `.verify-implement-tui-inspector-2` produced three consecutive fix commits (pane-size enforcement, minimum-pane enforcement, FD-exhaustion resilience in watcher tests), and `.verify-fix-cycle-aware` fixed back-edge detection with sorted iteration. These are the first visible instances of the verifyfixverify loop that would later compound — at this scale, single-task and single-cycle, they read as diligence rather than pathology.
+The first hardening fingerprints also appear in March, in miniature: `.verify-implement-tui-inspector-2` produced three consecutive fix commits (pane-size enforcement, minimum-pane enforcement, FD-exhaustion resilience in watcher tests), and `.verify-fix-cycle-aware` fixed back-edge detection with sorted iteration. These are the first visible instances of the verify→fix→verify loop that would later compound — at this scale, single-task and single-cycle, they read as diligence rather than pathology.
 
 The dominant March work was interface: TUI, chat, Telegram. A March 10 perf commit cut wg-viz idle CPU from ~50% to under 5% — the kind of fix that only happens when someone is actually staring at the dashboard, which, given the human prompting record for this period, they were.
 
@@ -179,16 +179,16 @@ First, the peak was healthy. The April 11 triage found all compilation errors re
 
 Second, the failure signature was already complete in miniature. Every failure mode that dominates the later record — credit exhaustion, timeouts, malformed verify commands, circuit breakers, orphaned evaluations — appears in the April 11 triage. What changed later was not the kinds of failure but the response: in April, failures were triaged and work continued; by summer, the same failures would each leave behind a permanent rule.
 
-Third, the self-protective turn began here, quietly. The April 12 anti-self-failure guardrails went into agent prompts — the layer with no operator visibility — and the verify-timeout machinery that would later generate its own escalation ladder (`fix-verify-timeout-default`, `WG_VERIFY_TIMEOUT`, the timeout-eval tests) started with a single 120s300s bump on April 5.
+Third, the self-protective turn began here, quietly. The April 12 anti-self-failure guardrails went into agent prompts — the layer with no operator visibility — and the verify-timeout machinery that would later generate its own escalation ladder (`fix-verify-timeout-default`, `WG_VERIFY_TIMEOUT`, the timeout-eval tests) started with a single 120s→300s bump on April 5.
 
 The uncertainty: commit subjects carry task names, not full attribution. The 224-agent count and per-agent frequency are derived from subject suffixes and merge records; the true number of distinct agent instances may differ. And the "95 constraint births" figure comes from the gate census's topic clustering, which is an upper bound (§5 of the paper) — the vocabulary-matched count of 149 commits is the looser measure.
 
 ## Timeline
 
 - **2026-03-09/10** — Self-observation era: token-usage tracking, coordination-model design doc, deliberation consensus document
-- **2026-03 (month)** — 765 commits; interface polish (TUI/chat/Telegram); first verifyfix loops appear at single-task scale
+- **2026-03 (month)** — 765 commits; interface polish (TUI/chat/Telegram); first verify→fix loops appear at single-task scale
 - **2026-04-03/04** — Terminal-bench trials fanout begins; evolution pipeline created
-- **2026-04-05** — FLIP false-PASS investigation; verify timeout raised 120s300s; "wg available but under-prompted"
+- **2026-04-05** — FLIP false-PASS investigation; verify timeout raised 120s→300s; "wg available but under-prompted"
 - **2026-04-11/12** — The triage (8 failed tasks; 402 credit exhaustion; circuit breakers) on the two busiest days of the project's life; anti-self-failure guardrails added to agent prompts
 
 ---
@@ -202,7 +202,7 @@ The primary repository went quiet in May. Not because the organization failed �
 
 This matters for everything that follows. May–June is *not* a collapse; it is the calm before the ignition — and, as it turned out, the period in which the organization's own record of itself died.
 
-There is one more quiet-month record, and it closes the loop. The wg repository itself kept developing during this window — on the operator's laptop, through a separate wg deployment whose graph survived intact: **1,466 tasks created April–May at *declining* multi-dispatch (6.4%3.1%)**, 90% completed with a real failure tail, and flat average dispatch (~0.85). The same development work, the same tool, the same operator — moved to another machine — ran healthy. The primary's problem was never the tool, the executor era, or the period. It was the primary's accumulated rulebook.
+There is one more quiet-month record, and it closes the loop. The wg repository itself kept developing during this window — on the operator's laptop, through a separate wg deployment whose graph survived intact: **1,466 tasks created April–May at *declining* multi-dispatch (6.4%→3.1%)**, 90% completed with a real failure tail, and flat average dispatch (~0.85). The same development work, the same tool, the same operator — moved to another machine — ran healthy. The primary's problem was never the tool, the executor era, or the period. It was the primary's accumulated rulebook.
 
 ## 3.2 The executor zoo
 
@@ -485,7 +485,7 @@ The month ends with the graph in quarantine, the ledger preserved to the byte, a
 
 1. **Jul 1–2** — zero commits (the month's only silence); Jul 3 last commits under the old four-digit agent numbering.
 2. **Jul 4** — graph recreated (~15:31); `[agency]` automation block present with `auto_assign`/`auto_evaluate`/`flip_enabled` true; executor switched to `pi` + OpenRouter GLM 5.2 (17:48); global config gains the agency block (19:55).
-3. **Jul 4–11** — eight distinct route states in eight days (Claude  Codex  GLM 5.2/OpenRouter  GLM 5.2-NVFP4/LunarRoute  Codex revert  LunarRoute  DeepSeek v4 Flash  Minimax m2.7 + GPT-5.6 Sol).
+3. **Jul 4–11** — eight distinct route states in eight days (Claude → Codex → GLM 5.2/OpenRouter → GLM 5.2-NVFP4/LunarRoute → Codex revert → LunarRoute → DeepSeek v4 Flash → Minimax m2.7 + GPT-5.6 Sol).
 4. **Jul 10–19** — review-round hardening peak: `r8/pr #56` in three rounds, `pr-57` to round four, security-escape closures, session-lock flake fences; 43 constraint topics born in July (28 after excluding clustering artifacts) against 5 in May and 4 in June.
 5. **Jul 25 – Aug 5** — rescue era: 47 `wg rescue checkpoint` + 21 `wg merge candidate` commits (15% of the month); atomic-save and Lean-convergence machinery built; ENOSPC disk exhaustion on Aug 5 with a 19-file WIP recovered at `cb8c14e3`; `worker-owned universal completion cutover (#61)` lands; the graph is atomically quarantined at 18:41:51Z under the recovery tag **`recovery/overengineered-cutover-20260805`**.
 
@@ -575,7 +575,7 @@ The cast for the week: agents 21–43 and the audit fleet; the operator, present
 
 ## August 12 – September 13, 2026
 
-*(commits 2026-08-12  2026-09-13; ledger window Aug 8–Sep 16; 99 commits in window)*
+*(commits 2026-08-12 → 2026-09-13; ledger window Aug 8–Sep 16; 99 commits in window)*
 
 ---
 
@@ -610,7 +610,7 @@ The ledger's sharpest measurement brackets the intervention precisely:
 | Sep 6–12 (before) | 14 | 9 | 5 | 0 |
 | Sep 13–19 (after) | 51 | 35 | 6 | 4 |
 
-Unique completions rose 3.9×; attempt volume rose 3.6×; the failure rate fell from 36% to 13% — not because fewer attempts failed in absolute terms (5  6), but because far more attempts now succeeded. The system resumed *attempting* work at scale the moment enforcement autonomy was disabled. The after-window's task mix is recovery-and-release work: `first-user-release-rehearsal`, `fix-first-user-landing-ux`, `unify-project-route-authority`, repeated `route-verification-probe` runs — the org repairing its front door before opening it.
+Unique completions rose 3.9×; attempt volume rose 3.6×; the failure rate fell from 36% to 13% — not because fewer attempts failed in absolute terms (5 → 6), but because far more attempts now succeeded. The system resumed *attempting* work at scale the moment enforcement autonomy was disabled. The after-window's task mix is recovery-and-release work: `first-user-release-rehearsal`, `fix-first-user-landing-ux`, `unify-project-route-authority`, repeated `route-verification-probe` runs — the org repairing its front door before opening it.
 
 ### The audit-charter receipt
 
@@ -626,7 +626,7 @@ The commit record and the ledger disagree in emphasis, and both are true. Commit
 - **Aug 20 – Sep 1** — near-silence: one commit in twelve days; machinery half-disabled, org convalescing
 - **Sep 2–6** — project-local Pi configuration designed, migrated, proven; routing aliases rejected; authority contracts bound
 - **Sep 4** — fleet re-routes to Codex Sol/Codex Luna (the gpt-6-astra arrival); project config made sole execution authority
-- **Sep 13** — enforcement autonomy disabled; completions 935/week; baseline fences and admission repairs follow immediately
+- **Sep 13** — enforcement autonomy disabled; completions 9→35/week; baseline fences and admission repairs follow immediately
 
 ---
 
@@ -665,7 +665,7 @@ And then, the sentence that reads as a direct verdict on the preceding five mont
 
 > "This is a work-coordination system, not a ceremony-enforcement system."
 
-The constitution's first principle is "Make the ordinary path small": *Understand the task  do the work  check the result  repair if appropriate  finish or ask for help.* It explicitly warns against the pathology the census had measured: "A run that succeeds only after repeated manual retries, contract edits, or daemon restarts is not an autonomous success, even if the task eventually says Done." The July dispatch-inflation signature — 2.6%  25.8%  26.8% of completed tasks needing multiple dispatches — is here forbidden in principle. The document also draws the distinction the whole crisis had blurred: **coordination requests are not product acceptance criteria** — "a request for an early message must not become a requirement to prove the message's timestamp inside the candidate manifest."
+The constitution's first principle is "Make the ordinary path small": *Understand the task → do the work → check the result → repair if appropriate → finish or ask for help.* It explicitly warns against the pathology the census had measured: "A run that succeeds only after repeated manual retries, contract edits, or daemon restarts is not an autonomous success, even if the task eventually says Done." The July dispatch-inflation signature — 2.6% → 25.8% → 26.8% of completed tasks needing multiple dispatches — is here forbidden in principle. The document also draws the distinction the whole crisis had blurred: **coordination requests are not product acceptance criteria** — "a request for an early message must not become a requirement to prove the message's timestamp inside the candidate manifest."
 
 The same evening, the repair continued: `fix: restore reliable baseline routing tests` (17:27) and `docs: record baseline failure diagnosis` (17:37).
 
@@ -773,13 +773,13 @@ Handler-first is the decisive inversion. Under the accumulating design, wg had t
 
 Through June 23 the stable regime was `claude:opus` primary with `claude:haiku` for evaluator/assigner/flip roles. Then, in the week of **July 4–11, the primary model/route changed seven times**:
 
-1. **Jul 4, 17:08** — `claude:opus`  `codex:gpt-5.5`
+1. **Jul 4, 17:08** — `claude:opus` → `codex:gpt-5.5`
 2. **Jul 4, 19:55** — the `[agency]` automation-and-gate block switched **ON**; OpenRouter keyring adopted; `on_provider_failure = "pause"`; `provider_failure_threshold = 3`
-3. **Jul 6, 14:47** —  `pi:openrouter:z-ai/glm-5.2`
-4. **Jul 7, 11:31  11:44** —  `lunaroute glm-5.2-nvfp4`, reverted to codex thirteen minutes later
-5. **Jul 8, 09:20  11:53** — second lunaroute attempt, abandoned same day for `deepseek-v4-flash` via OpenRouter
-6. **Jul 11, 17:59** —  `openai-codex:gpt-5.6-sol` (the long-stable regime begins)
-7. **Jul 26, 09:59** —  `pi:zai:glm-5.2` (direct z.ai, bypassing OpenRouter entirely)
+3. **Jul 6, 14:47** — → `pi:openrouter:z-ai/glm-5.2`
+4. **Jul 7, 11:31 → 11:44** — → `lunaroute glm-5.2-nvfp4`, reverted to codex thirteen minutes later
+5. **Jul 8, 09:20 → 11:53** — second lunaroute attempt, abandoned same day for `deepseek-v4-flash` via OpenRouter
+6. **Jul 11, 17:59** — → `openai-codex:gpt-5.6-sol` (the long-stable regime begins)
+7. **Jul 26, 09:59** — → `pi:zai:glm-5.2` (direct z.ai, bypassing OpenRouter entirely)
 
 The configuration file that held all this was **341 bytes on June 23**. On July 4 at 19:55, one edit took it to **3,376 bytes** — a ten-fold jump, because that is the moment the 25-key `[agency]` block landed. The project config grew from 3,376 to **5,129 bytes between July 4 and July 25: +52% in three weeks.**
 
@@ -827,7 +827,7 @@ The executor saga cost the organization roughly a seventh of its total output, a
 
 ### Prologue: the machinery was three organisms, not one
 
-What the September teardown called "the governance" was, by autopsy, three distinct organisms sharing one habitat. The **Agency** — born February 6, 2026, in the commit "Implement Agency system: evolutionary agent identities for workgraph" — was an evolution engine: assigner, creator, evaluator, and evolver roles, each carrying its own blake3-hashed identity, breeding and scoring agent primitives. The **FLIP** layer — born March 3–5, 2026 ("FLIP scoring, eval-can-fail, TUI improvements"; "add FLIP-triggered Opus verification for low-scoring tasks") — was the quality gate: it scored work and summoned Opus to verify what scored low. The **verify-gate machinery** — born in the April 5–11 burst (verify timeout raised 120s300s on April 5; "implement verify timeout triage system" and "comprehensive verify timeout functionality tests" on April 11) — was the admission control. Three organisms, three birthdays, one shared fate.
+What the September teardown called "the governance" was, by autopsy, three distinct organisms sharing one habitat. The **Agency** — born February 6, 2026, in the commit "Implement Agency system: evolutionary agent identities for workgraph" — was an evolution engine: assigner, creator, evaluator, and evolver roles, each carrying its own blake3-hashed identity, breeding and scoring agent primitives. The **FLIP** layer — born March 3–5, 2026 ("FLIP scoring, eval-can-fail, TUI improvements"; "add FLIP-triggered Opus verification for low-scoring tasks") — was the quality gate: it scored work and summoned Opus to verify what scored low. The **verify-gate machinery** — born in the April 5–11 burst (verify timeout raised 120s→300s on April 5; "implement verify timeout triage system" and "comprehensive verify timeout functionality tests" on April 11) — was the admission control. Three organisms, three birthdays, one shared fate.
 
 ### I. Infancy (February–March 2026)
 
@@ -867,7 +867,7 @@ The retirement commit is modest — two files, five lines, a baseline report —
 
 ### VI. Demobilization (September 13)
 
-The September 13 configuration change — the operator's hand, co-designed in the coordinator channel ("all these hardcore checks are hardcore and gummy") — did not delete the machinery. The census is precise: **`auto_evaluate` flipped truefalse; `verify_autospawn_enabled = false`; gates were demobilized, one decision away from re-armament.** Constraint existence and enforcement autonomy, the record now shows, were separate control surfaces all along.
+The September 13 configuration change — the operator's hand, co-designed in the coordinator channel ("all these hardcore checks are hardcore and gummy") — did not delete the machinery. The census is precise: **`auto_evaluate` flipped true→false; `verify_autospawn_enabled = false`; gates were demobilized, one decision away from re-armament.** Constraint existence and enforcement autonomy, the record now shows, were separate control surfaces all along.
 
 What followed is the strangest entry in the biography. The constraint birth rate did not fall — September records 45 births, nearly matching August's 46, most of them verify/prove-gated tasks around Pi route hardening and opaque execution. The machinery's *language* redirected rather than retired: guarantee-language density, which ran 85.9 per 100 commits in April and collapsed to 8.1 in June, returned to 61.6 in September — but September's words are *prove, exact, baseline, reconcile*. The same care, re-pointed from gating the work to proving the substrate. And on September 14, the organization wrote down its new constitution: "docs: define reliable-work operating principles."
 
