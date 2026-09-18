@@ -1,6 +1,6 @@
 # Dataset Manifest—The Bureaucratization Cascade
 
-**Release version:** 1.0 · September 16, 2026
+**Release version:** 1.1 · September 18, 2026
 **License:** CC-BY-4.0 (data and reports); the paper itself is separate.
 **Citation:** *Bureaucratization Cascades in Hybrid Human–AI Organizations: A computational ethnography of recursive constraint accretion* (Poietic PBC working paper).
 
@@ -46,3 +46,12 @@ Extracted from the coordination state directories of the deployments (task archi
 ## Privacy posture
 
 No credentials (audited on three surfaces). No prompts or transcripts. No task text. Hashed task IDs. Personal-identifier exclusions per the redaction audit. This manifest is the release's authoritative scope document.
+
+### v1.1 additions (fleet integration)
+
+| File | Content | Rows |
+|---|---|---|
+| `lifecycles/fleet-deployments.csv` | One normalized row per deployment across all four machines (76 rows; the `jobs` org is excluded per the privacy rule). Grant campaigns anonymized; paths omitted. | 76 |
+| `lifecycles/fleet-events.csv` | Dated event log spanning all machines: births, ignition beats, corruptions, quarantine, recovery arc, intervention, constitution, resolution. | 35 |
+
+Both tables are content-free by construction (counts, shares, dates, verdicts; no prompts, transcripts, or titles).

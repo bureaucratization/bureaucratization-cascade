@@ -1,0 +1,36 @@
+date,machine,deployment,event_type,detail,evidence_source
+2026-01-18,ulivo,wg-primary,birth,first commit: workgraph library + CLI,git
+2026-01-19,ulivo,wg-primary,milestone,"self-hosting begins (""tracks its own development roadmap"")",git
+2026-02-06,ulivo,wg-primary,governance-seed,Agency system born; .workgraph gitignored (state untracked from week 3),git
+2026-02-15,ulivo,wg-primary,hygiene-seed,"""add validation, atomic saves"" (instinct present, mechanism absent)",git
+2026-02-27,ulivo,wg-primary,governance-seed,autopoietic task generation arrives,git
+2026-03-03,ulivo,wg-primary,governance-seed,FLIP born (scoring + Opus-triggered verification),git
+2026-04-05,ulivo,wg-primary,ignition-beat-1,verify gates born in triage week; HTTP 402 credit-exhaustion abandonments; ~95-constraint burst; 1558 tests green,triage + git
+2026-05-01,octopus01,phrs,storage-incident,archive corruption (non-atomic write); hand-recovered same day; zero task loss; full file-level evidence,node evidence
+2026-05-02,ulivo,wg-primary,corruption,nex cursor corruption (first executor-corruption event),git
+2026-05-31,ulivo,wg-primary,human-directive,"""coolest executors"" directive",prompt corpora
+2026-06-01,ulivo,wg-primary,migration,ten exec-* commits in one day (executor zoo peak),git
+2026-06-02,ulivo,wg-primary,corruption,"""harden service recovery after corrupt runtime state"" (known hazard)",git
+2026-06-15,ulivo,wg-primary,human-consultation,"""thinking we should test out ... pi. wdyt?"" (the pi migration begins as a question)",codex corpus
+2026-06-16,ulivo,wg-primary,rename,"cargo-package rename workgraph->worksgood (""the merger"")",git
+2026-06-18,ulivo,wg-primary,death,"graph unloadable at ~/workgraph/.wg; 76,371 unobserved ""Failed to load graph"" ticks over 4.5 days",daemon logs
+2026-06-22,ulivo,wg-primary,human-directive,two-tier routing request (GLM 5.2 + DeepSeek) becomes fleet architecture,codex corpus
+2026-06-25,ulivo,wg-primary,human-directive,"""we need a mechanism to block bad actors... a kind of review"" (the one clear hardening seed)",claude corpus
+2026-06-26,ulivo,wg-primary,divergence,"""Synthesize diverged mains"" — local vs GitHub lineages reconciled by hand",git
+2026-07-04,ulivo,wg-primary,ignition-beat-3,"graph recreated; agency automation switched ON 19:55; seven route changes begin; constraint spike (defensible ~28 births); recovery tag later names it ""overengineered-cutover""",config backups + census
+2026-07-11,ulivo,wg-primary,model-era,gpt-5.6-sol first recorded appearance (config layer),global config backups
+2026-08-01,ulivo,wg-primary,archiver-hazard,surprise mass-archive on daemon startup held by agents,git
+2026-08-01,lambda01,phind,storage-incident,corruption event (recovery dir phind.recovery-20260801T164014Z),node dirs
+2026-08-02,ulivo,wg-primary,archiver-fix,automatic archival made opt-in (shredder-adjacent trigger disabled),git + config
+2026-08-03,ulivo,wg-primary,scar-tissue,atomic graph work-save designed + built (response to June death + Aug 1 chaos),finalization journals
+2026-08-05,ulivo,wg-primary,quarantine,disk exhaustion triggers atomic quarantine of damaged graph; recovery/overengineered-cutover-20260805,quarantine dirs
+2026-08-07,ulivo,wg-primary,recovery-arc,teardown day: 47 subtractive commits; fresh clone from GitHub 22:29,git + reflog
+2026-08-08,ulivo,wg-primary,recovery-arc,graph state reset; current ledger begins 09:43,reflog + ledger
+2026-08-09,ulivo,wg-primary,recovery-arc,"operator 357-line rescue manifesto: ""control-plane failures, not failures of the requested work""; semantic rollback doctrine",recovery docs
+2026-08-10,ulivo,wg-primary,recovery-arc,"evaluators demoted to witnesses; operator asks ""What is the archive process for WG?""",git + pi corpus
+2026-08-16,ulivo,wg-primary,ratchet,"provider-backoff-contract hardenings begin (Aug 16 x3, Sep 9 x2 — docs-only)",git
+2026-08-20,ulivo,wg-primary,convalescence,one commit in twelve days; machinery half-disabled,git
+2026-09-04,ulivo,wg-primary,model-era,fleet re-routes to gpt-5.6-sol/luna (astra arrives),git + metering
+2026-09-13,ulivo,wg-primary,intervention,"enforcement autonomy disabled (config-layer); completions 9->35/week; acceptance edges softened same day; deferrals continue (2,505 in Sep — unresolved)",config snapshot + ledger
+2026-09-14,ulivo,wg-primary,constitution,"""reliable-work operating principles"" written (245 lines): ceremony-enforcement forbidden; retried-success not autonomous success",git
+2026-09-16,ulivo,wg-primary,resolution,"model registry retired (designed by operator directly, implemented same evening); forward work resumes; burden signature absent at snapshot",git
