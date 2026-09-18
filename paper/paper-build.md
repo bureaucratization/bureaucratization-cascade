@@ -136,17 +136,20 @@ The preservation reflexes that did emerge are visible and datable—and the arch
 
 ### 4.6 A census of seven deployments: the cascade is organizational, not tool-wide
 
-Between February and September 2026 the same principal ran wg in seven deployments on the same machine. Six completed normally; only the sustained one cascaded:
+A fleet survey across the operator's four machines (workstation, laptop, GPU server, HPC node, all tailnet-connected) catalogs ~77 deployments totaling ~15,000 task records between January and September 2026. One cascaded:
 
-| Deployment | Period | Tasks | Governance share | Completion |
-|---|---|---|---|---|
-| cancer_pangenome (Feb baseline) | Feb 13 | 17 | 0% | 100% |
-| cancer_pangenome_R01 | Feb–May | 385 | 0% → 24%, linear | 93–100% |
-| paperhedge / typelean / jobs | mid-June | 12 | 0% | ~100%, single dispatch |
-| pgwas_R01 | May 19 – Jun 5 | 848 | 78%, stable | ~95%, 12-min median |
-| **wg (primary, sustained)** | **Jan–Sep** | **thousands** | **accelerating (§4.1)** | **93% organic in July, at 9x burden (§4.7)** |
+| Deployment (representative) | Machine | Period | Tasks | Governance share | Completion |
+|---|---|---|---|---|---|
+| cancer_pangenome (Feb baseline) | ulivo | Feb 13 | 17 | 0% | 100% |
+| cancer_pangenome_R01 | ulivo | Feb–May | 385 | 0% → 24%, linear | 93–100% |
+| pgwas_R01 | ulivo | May–Jun | 848 | 78%, stable | ~95%, 12-min median |
+| ndm | lambda01 | May–Aug | 2,138 | 74.5%, flat | 94% |
+| phonon | puppost | Jan–Feb | 362 | 65%, bounded | ~99% |
+| phrs | lambda01 + octopus01 | Mar–May | ~700 | 72%, bounded | ~98% |
+| paperhedge / typelean / jobs + ~68 more | mixed | Jan–Sep | ~7,000 | 0–70% | healthy |
+| **wg (primary, sustained)** | **ulivo** | **Jan–Sep** | **thousands** | **accelerating (§4.1)** | **93% organic in July, at 9x burden (§4.7)** |
 
-Three observations. First, a baseline exists: the February archive is the earliest task record found anywhere—17 tasks, 100% completion, zero governance machinery—the tool's ground state before any accretion. Second, machinery share rising *linearly by design* (0%→12%→24% across the cancer_pangenome eras; FLIP per writing task) coexists with healthy completion; an *accelerating* share without retirement is the cascade. Third, and decisive for attribution: **May 12–29, exactly the primary's post-collapse trough, cancer_pangenome completed 329 tasks at 93%, including a 123-of-137 day**—same tool, same machine, same principal, concurrent campaigns. The stall was organizational. The caveat stands: all seven are one principal's deployments, so this is a census of environments, not independent replication—but it is a dose-response gradient with a baseline, the strongest structure observational evidence admits. (The released dataset's conservative classification rule reproduces the pgwas share within ~2 points and the cancer_pangenome era trend at roughly half the magnitudes, with the same linear pattern; the rule is documented in the dataset manifest.)
+The fleet result sharpens the dose-response claim into a rarity claim: **one cascade in ~77 deployments**, across four machines, the full configuration-parameter range, and every campaign scale from 10 to 2,138 tasks. Three observations. First, a baseline exists: the February archive is the earliest task record found anywhere—17 tasks, 100% completion, zero governance machinery—the tool's ground state before any accretion. Second, machinery share rising *linearly by design* (0%→12%→24% across the cancer_pangenome eras; FLIP per writing task) coexists with healthy completion; an *accelerating* share without retirement is the cascade. Third, and decisive for attribution: **May 12–29, exactly the primary's post-collapse trough, cancer_pangenome completed 329 tasks at 93%, including a 123-of-137 day**—same tool, same machine, same principal, concurrent campaigns. The stall was organizational. The caveat stands: all seven are one principal's deployments, so this is a census of environments, not independent replication—but it is a dose-response gradient with a baseline, the strongest structure observational evidence admits. (The released dataset's conservative classification rule reproduces the pgwas share within ~2 points and the cancer_pangenome era trend at roughly half the magnitudes, with the same linear pattern; the rule is documented in the dataset manifest.)
 
 ### 4.7 The burden signature: dispatch inflation (Figure 7, panel B)
 
@@ -183,7 +186,7 @@ Because the study is ethnographic, several properties that would be defects in a
 - Attribution of constraint authorship relies on keyword classification of the operator's prompting record, which is crude; implicit delegated design is not attributable from prompt corpora; and the record has coverage gaps (January–March absent from the machine; the July 4 activation unattributed). The census is also a lower bound on governance: rules embedded in agent prompts (e.g., April's anti-self-failure guardrails) are invisible to a commit-space instrument.
 - Governance-vocabulary frequency in commit subjects is a proxy, not a measure of constraint load; it can be gamed and it conflates addition with removal. The gate census (§4.1, Figure 7) replaces it, with two caveats: key-phrase clustering over-fragments, so 312 is an upper bound on distinct constraints (164 high-confidence, 148 medium); and commit-subject vocabulary misses silent in-constraint changes—which is itself an argument for the gate-ledger mechanism proposed in §6.
 - Attribution of model identity per session is confined to the August 8–September 16 window (§4.5); earlier periods are phase-level only. Additionally, raw-text model greps proved systematically misleading: the most frequent model name in the corpus (Claude, ~80,000 text hits) reflects agents *discussing* Claude in prompt content, not executing it—structured metering fields show zero Claude execution in the attributable window. Text-mention frequency is not execution frequency, a methodological trap we flag for future studies of agent-session corpora.
-- One longitudinal case embedded in a census of seven same-principal deployments—an environment gradient with a baseline, but not independent replications. We publish the full forensic record—commit history, session transcripts, failure reports—so that the episode can be independently analyzed, replicated, or refuted. We are aware of no comparable public record of an agent organization's own governance decay, which is precisely why we are making this one public.
+- One longitudinal case embedded in a fleet census of ~77 same-principal deployments (~15,000 task records, four machines)—an environment gradient with a baseline and a rarity result, but not independent replications. We publish the full forensic record—commit history, session transcripts, failure reports—so that the episode can be independently analyzed, replicated, or refuted. We are aware of no comparable public record of an agent organization's own governance decay, which is precisely why we are making this one public.
 - The forensic analysis was itself performed by AI agents whose session logs were written into the same `.wg/` record under analysis. The investigation therefore augmented its own evidence base while running; all redaction and verification figures in this paper were fixed only after the analysis workers had stopped. Any replication should similarly freeze the record before re-scanning.
 - We were participants. The recovery was ours. Readers should discount our judgment of "the system now behaves extremely well" accordingly—though the test suite, task pass rates, and sustained velocity since September are in the record and checkable.
 

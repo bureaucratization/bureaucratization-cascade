@@ -1,0 +1,6 @@
+node,deployment,kind,tasks,done,abandoned,completion_pct,span_start,span_end,verdict
+octopus01,phrs,research-campaign,113,111,2,98,2026-03-31,2026-04-02,healthy-bounded
+octopus01,lewontin-paradox,research-campaign,78,77,1,99,2026-07-13,2026-07-25,healthy-bounded
+octopus01,phind,small,,,,,,,empty/early
+octopus01,workgraph.2/.workgraph,test-fixture,,,,,,,test
+octopus01,workgraph.1/test-workgraph,test-fixture,,,,,,,test
