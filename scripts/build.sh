@@ -9,30 +9,30 @@ s = open('paper/paper.md').read()
 s = s.replace(' \u2014 ', '\u2014').replace('\u2212', '-')
 F = 'figures'; W = '{width=100%}'
 
-s = s.replace("and the birth of the provider-backoff-contract (Figure 8).\n",
-"and the birth of the provider-backoff-contract (Figure 8).\n\n"
-f"![**Figure 8.** Constraint births per month against the provider-reliability event timeline. The July churn week brackets the constraint spike.]({F}/fig8-ignition.png){W}\n", 1)
+s = s.replace("and the birth of the provider-backoff-contract (F2).\n",
+"and the birth of the provider-backoff-contract (F2).\n\n"
+f"![**F2.** Constraint births per month against the provider-reliability event timeline. The July churn week brackets the constraint spike.]({F}/fig8-ignition.png){W}\n", 1)
 s = s.replace("unlike a bare correlation between rules and output.\n",
 "unlike a bare correlation between rules and output.\n\n"
-f"![**Figure 7.** The progression over time: rule stock (top), dispatch burden with the surviving task-grain windows marked (middle), and throughput (bottom).]({F}/fig7-progression.png){W}\n", 1)
+f"![**F5.** The progression: rule stock (top) and dispatch burden (bottom), with the ignition week and the September 13 intervention marked.]({F}/fig7-progression.png){W}\n", 1)
 s = s.replace("documented in configuration snapshots and resolution records, not in commit subjects.\n",
 "documented in configuration snapshots and resolution records, not in commit subjects.\n\n"
 f"![**Figure 1.** Monthly commit velocity (bars) and governance-vocabulary share of commit subjects (line).]({F}/fig1-velocity.png){W}\n", 1)
 s = s.replace("verified docs-only, no source changes.\n",
 "verified docs-only, no source changes.\n\n"
-f"![**Figure 2.** The provider-backoff-contract sequence: cumulative specification size after each hardening commit; the governed functionality never shipped in the period shown.]({F}/fig2-ratchet.png){W}\n", 1)
+f"![**F1.** The provider-backoff-contract sequence: cumulative specification size after each hardening commit; the governed functionality never shipped in the period shown.]({F}/fig2-ratchet.png){W}\n", 1)
 s = s.replace("Which brings us to the finding we did not expect.\n",
 "Which brings us to the finding we did not expect.\n\n"
-f"![**Figure 3.** Gate census: constraints added and removed per month, with cumulative active constraints.]({F}/fig3-accretion.png){W}\n", 1)
+f"![**F4.** Gate census: constraints added and removed per month, with cumulative active constraints.]({F}/fig3-accretion.png){W}\n", 1)
 s = s.replace("Total recorded metered cost for the window: **$683.55**.",
 "Total recorded metered cost for the window: **$683.55**.\n\n"
-f"![**Figure 4.** Model mix in the session-attributable window; structured metering fields only.]({F}/fig4-models.png){W}\n", 1)
+f"![**F6.** Model mix in the session-attributable window; structured metering fields only.]({F}/fig4-models.png){W}\n", 1)
 s = s.replace("why we describe recovery, not proof.\n",
 "why we describe recovery, not proof.\n\n"
-f"![**Figure 5.** Daily unique task completions, current-state ledger, with the September 13 enforcement-autonomy boundary marked.]({F}/fig5-recovery.png){W}\n", 1)
+f"![**F3.** Daily unique task completions, current-state ledger, with the September 13 enforcement-autonomy boundary marked.]({F}/fig5-recovery.png){W}\n", 1)
 s = s.replace("the leading indicator, completion rate the lagging one.\n",
 "the leading indicator, completion rate the lagging one.\n\n"
-f"![**Figure 6.** Dispatch inflation: share of completed tasks requiring more than one dispatch, by week, July 2026.]({F}/fig6-retry-burden.png){W}\n", 1)
+f"![**F7.** Dispatch inflation: share of completed tasks requiring more than one dispatch, by week, July 2026.]({F}/fig6-retry-burden.png){W}\n", 1)
 
 open('paper/paper-build.md', 'w').write(s)
 print('paper/paper-build.md generated')
