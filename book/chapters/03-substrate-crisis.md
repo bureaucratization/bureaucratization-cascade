@@ -7,6 +7,8 @@ The primary repository went quiet in May. Not because the organization failed �
 
 This matters for everything that follows. May–June is *not* a collapse; it is the calm before the ignition — and, as it turned out, the period in which the organization's own record of itself died.
 
+There is one more quiet-month record, and it closes the loop. The wg repository itself kept developing during this window — on the operator's laptop, through a separate wg deployment whose graph survived intact: **1,466 tasks created April–May at *declining* multi-dispatch (6.4%→3.1%)**, 90% completed with a real failure tail, and flat average dispatch (~0.85). The same development work, the same tool, the same operator — moved to another machine — ran healthy. The primary's problem was never the tool, the executor era, or the period. It was the primary's accumulated rulebook.
+
 ## 3.2 The executor zoo
 
 The main technical story of May–June is not governance. It is **executor and model churn** — the systematic attempt to find a better way to run the agents. The commit record names at least four executor lineages in play, plus a menagerie of configuration templates:

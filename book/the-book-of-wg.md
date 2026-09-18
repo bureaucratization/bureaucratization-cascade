@@ -176,6 +176,8 @@ The primary repository went quiet in May. Not because the organization failed �
 
 This matters for everything that follows. May–June is *not* a collapse; it is the calm before the ignition — and, as it turned out, the period in which the organization's own record of itself died.
 
+There is one more quiet-month record, and it closes the loop. The wg repository itself kept developing during this window — on the operator's laptop, through a separate wg deployment whose graph survived intact: **1,466 tasks created April–May at *declining* multi-dispatch (6.4%→3.1%)**, 90% completed with a real failure tail, and flat average dispatch (~0.85). The same development work, the same tool, the same operator — moved to another machine — ran healthy. The primary's problem was never the tool, the executor era, or the period. It was the primary's accumulated rulebook.
+
 ## 3.2 The executor zoo
 
 The main technical story of May–June is not governance. It is **executor and model churn** — the systematic attempt to find a better way to run the agents. The commit record names at least four executor lineages in play, plus a menagerie of configuration templates:
@@ -871,7 +873,7 @@ Survived by: atomic saves, a concierge, and a written constitution.
 
 The paper that grew alongside this book argues that agents can turn transient incidents into persistent institutional state faster than that state is retired, and that the earliest symptom is rising acceptance burden rather than falling completion. The book exists because the paper needed the record to be true, and the record needed reading.
 
-Three things the book adds that the paper cannot carry. First, texture: the constitution that forbids "a run that succeeds only after repeated manual retries" was written by the hand that had spent a month performing those retries. Second, the counterfactual: the same operator, the same tool, the same machine ran six other deployments that never cascaded—the disease needed the sustained organization, not the machinery. Third, the moral: every governance layer in this story—the gates, the archive policy, the gitignore entry from week three—was a rule written once and never reviewed, and the only mechanism that worked against them was a human reading the record and deleting.
+Three things the book adds that the paper cannot carry. First, texture: the constitution that forbids "a run that succeeds only after repeated manual retries" was written by the hand that had spent a month performing those retries. Second, the counterfactual: the same operator, the same tool, the same machines ran more than seventy-five other deployments that never cascaded—the disease needed the sustained organization, not the machinery. Third, the moral: every governance layer in this story—the gates, the archive policy, the gitignore entry from week three—was a rule written once and never reviewed, and the only mechanism that worked against them was a human reading the record and deleting.
 
 The organization survives. Its state is durable, its machinery retired or externalized, its constitution written, its burden low. The book closes where the record stands.
 
