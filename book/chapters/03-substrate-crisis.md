@@ -3,7 +3,7 @@
 
 ## 3.1 The quiet
 
-The primary repository went quiet in May. Not because the organization failed — because its operator was elsewhere. Two grant campaigns ran through *other* wg deployments on the same machine in exactly this window: `cancer_pangenome_R01` (352 tasks, May 12–29, 93% completion, including a 123-of-137 day) and `pgwas_R01` (848 tasks, May 19–June 5, ~95% completion). The tool was working; the operator was working; the primary repo simply received less attention. Later reconstruction would show the same pattern in the human prompt record: near-silence for the primary repo in May (16 prompts), against ~1,000 turns across the whole study.
+The primary repository went quiet in May. Not because the organization failed — because its operator was elsewhere. Two grant campaigns ran through *other* wg deployments on the same machine in exactly this window: *grant campaign B* (352 tasks, May 12–29, 93% completion, including a 123-of-137 day) and *grant campaign A* (848 tasks, May 19–June 5, ~95% completion). The tool was working; the operator was working; the primary repo simply received less attention. Later reconstruction would show the same pattern in the human prompt record: near-silence for the primary repo in May (16 prompts), against ~1,000 turns across the whole study.
 
 This matters for everything that follows. May–June is *not* a collapse; it is the calm before the ignition — and, as it turned out, the period in which the organization's own record of itself died.
 

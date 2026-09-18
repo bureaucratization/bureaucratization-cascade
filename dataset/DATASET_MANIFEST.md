@@ -13,7 +13,7 @@ Structured, **content-free** lifecycle traces of tasks executed by AI agents acr
 - **Prompts and transcripts.** No agent prompts, no session transcripts, no chat logs.
 - **Task titles and descriptions.** Dropped from all lifecycle CSVs; task IDs are hashed (SHA-1 prefix, `t_…`), except the handful cited verbatim in the published paper, which retain their IDs for cross-reference.
 - **The `jobs` deployment.** Excluded entirely (all data), as it is a personal document project.
-- **Grant content.** The pgwas/cancer_pangenome deployments concern unpublished grant applications; their science is present only as aggregate counts.
+- **Grant content.** The grant-A/grant-B deployments concern unpublished grant applications; they are anonymized throughout (filenames and prose). Their science is present only as aggregate counts. The code-to-name concordance is held privately by the operator.
 
 Excluding prompt and transcript content costs the paper nothing: every claim is derived from counts, timestamps, statuses, and dispatch data.
 
@@ -26,11 +26,11 @@ Excluding prompt and transcript content costs the paper nothing: every claim is 
 | `current-tasks.csv` | wg primary (post-reset, Aug 8–Sep 16) | 115 | task_id, classification, created_month, final_status, completion_month, event_count, admission_deferred_count |
 | `pre-aug9-tasks.csv` | wg primary (Aug 8–9 snapshot) | 28 | task_id, classification, status, created_at, completed_at, n_events, gate_eval_mentions |
 | `primary-july-tasks.csv` | wg primary (July quarantine archive) | 253 | task_id, classification, status, family, created_at, completed_at, latency_days, dispatch_count |
-| `pgwas-tasks.csv` | pgwas_R01 (May 19–Jun 5) | 848 | task_id, classification, status, created_month, completed_month |
-| `cancerpangenome-tasks.csv` | cancer_pangenome_R01 (Feb/May eras) | 385 | era, task_id, classification, status, created_at, completed_at, latency_min, dispatch_or_retry |
+| `grant-a-tasks.csv` | Grant campaign A (May 19–Jun 5) | 848 | task_id, classification, status, created_month, completed_month |
+| `grant-b-tasks.csv` | Grant campaign B (Feb/May eras) | 385 | era, task_id, classification, status, created_at, completed_at, latency_min, dispatch_or_retry |
 | `*-monthly.csv` | monthly aggregates |—| content-free |
 
-**Classification rule** (derived `classification` column): `experiment` = verify-timeout/CLI-test/probe/smoke/repro family; `governance` = title (not included) began with `evaluate/flip/assign agent/quality-pass/verify/admin/checkpoint/admission` or carried an `agency` tag; all else `work`. **Known deviation:** this conservative prefix rule reproduces the paper's pgwas governance share within ~2 points (76% vs 78%) but yields ~half the paper's per-era cancer_pangenome shares (0%, 6%, 13% vs 0%, 12%, 24%), which additionally counted verification-type work tasks as governance. Both classifications show the same linear (non-accelerating) pattern. The rule is stated so results are recomputable either way.
+**Classification rule** (derived `classification` column): `experiment` = verify-timeout/CLI-test/probe/smoke/repro family; `governance` = title (not included) began with `evaluate/flip/assign agent/quality-pass/verify/admin/checkpoint/admission` or carried an `agency` tag; all else `work`. **Known deviation:** this conservative prefix rule reproduces the paper's grant campaign A governance share within ~2 points (76% vs 78%) but yields ~half the paper's per-era grant campaign B shares (0%, 6%, 13% vs 0%, 12%, 24%), which additionally counted verification-type work tasks as governance. Both classifications show the same linear (non-accelerating) pattern. The rule is stated so results are recomputable either way.
 
 ### `governance/`—evidence for the paper's claims
 
